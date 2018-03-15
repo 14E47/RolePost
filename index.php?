@@ -1,0 +1,7 @@
+<html>
+	<head>
+		<title>rolepost.com</title>
+	</head><frameset rows="*,0" border="0" bordercolor="#FFFFFF">
+		<frame name="central" src="/home.php?r=R&ref=" scrolling="auto">
+		<frame name="pp" src="/pp.php" scrolling="none">
+	</frameset></html>

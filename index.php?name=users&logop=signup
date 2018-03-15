@@ -1,0 +1,1137 @@
+<html>
+<head>
+<title>Role Post :: Signup</title>
+<link rel="stylesheet" href="themes/rolepost/style.css" type="text/css">
+<link rel="shortcut icon" href="themes/rolepost/favicon.ico">
+<meta name="description" content="A free role playing forum and community.">
+<meta name="author" content="Kelsey Smith">
+<meta name="keywords" content="arzynik, gemini, the gemini portal, devin smith, php, free, opensource, website, my, gallery, forums, forum, comments, author, comment, post, thread, section, category, article, articles, download, downloads, link, links, weblink, weblinks, search, query, account, ArzFS, arzfs, database, mysql, poll, polls, user, users, about">
+<meta name="robots" content="index,follow">
+<script language=javascript>
+  <!--
+
+    var hexcase = 0;  /* hex output format. 0 - lowercase; 1 - uppercase        */
+    var chrsz   = 8;  /* bits per input character. 8 - ASCII; 16 - Unicode      */
+
+    function hex_md5(s){ return binl2hex(core_md5(str2binl(s), s.length * chrsz));}
+
+    function md5_vm_test() {
+      return hex_md5("abc") == "900150983cd24fb0d6963f7d28e17f72";
+    }
+
+
+    function core_md5(x, len) {
+      x[len >> 5] |= 0x80 << ((len) % 32);
+      x[(((len + 64) >>> 9) << 4) + 14] = len;
+
+      var a =  1732584193;
+      var b = -271733879;
+      var c = -1732584194;
+      var d =  271733878;
+
+      for(var i = 0; i < x.length; i += 16) {
+        var olda = a;
+        var oldb = b;
+        var oldc = c;
+        var oldd = d;
+
+        a = md5_ff(a, b, c, d, x[i+ 0], 7 , -680876936);
+        d = md5_ff(d, a, b, c, x[i+ 1], 12, -389564586);
+        c = md5_ff(c, d, a, b, x[i+ 2], 17,  606105819);
+        b = md5_ff(b, c, d, a, x[i+ 3], 22, -1044525330);
+        a = md5_ff(a, b, c, d, x[i+ 4], 7 , -176418897);
+        d = md5_ff(d, a, b, c, x[i+ 5], 12,  1200080426);
+        c = md5_ff(c, d, a, b, x[i+ 6], 17, -1473231341);
+        b = md5_ff(b, c, d, a, x[i+ 7], 22, -45705983);
+        a = md5_ff(a, b, c, d, x[i+ 8], 7 ,  1770035416);
+        d = md5_ff(d, a, b, c, x[i+ 9], 12, -1958414417);
+        c = md5_ff(c, d, a, b, x[i+10], 17, -42063);
+        b = md5_ff(b, c, d, a, x[i+11], 22, -1990404162);
+        a = md5_ff(a, b, c, d, x[i+12], 7 ,  1804603682);
+        d = md5_ff(d, a, b, c, x[i+13], 12, -40341101);
+        c = md5_ff(c, d, a, b, x[i+14], 17, -1502002290);
+        b = md5_ff(b, c, d, a, x[i+15], 22,  1236535329);
+
+        a = md5_gg(a, b, c, d, x[i+ 1], 5 , -165796510);
+        d = md5_gg(d, a, b, c, x[i+ 6], 9 , -1069501632);
+        c = md5_gg(c, d, a, b, x[i+11], 14,  643717713);
+        b = md5_gg(b, c, d, a, x[i+ 0], 20, -373897302);
+        a = md5_gg(a, b, c, d, x[i+ 5], 5 , -701558691);
+        d = md5_gg(d, a, b, c, x[i+10], 9 ,  38016083);
+        c = md5_gg(c, d, a, b, x[i+15], 14, -660478335);
+        b = md5_gg(b, c, d, a, x[i+ 4], 20, -405537848);
+        a = md5_gg(a, b, c, d, x[i+ 9], 5 ,  568446438);
+        d = md5_gg(d, a, b, c, x[i+14], 9 , -1019803690);
+        c = md5_gg(c, d, a, b, x[i+ 3], 14, -187363961);
+        b = md5_gg(b, c, d, a, x[i+ 8], 20,  1163531501);
+        a = md5_gg(a, b, c, d, x[i+13], 5 , -1444681467);
+        d = md5_gg(d, a, b, c, x[i+ 2], 9 , -51403784);
+        c = md5_gg(c, d, a, b, x[i+ 7], 14,  1735328473);
+        b = md5_gg(b, c, d, a, x[i+12], 20, -1926607734);
+
+        a = md5_hh(a, b, c, d, x[i+ 5], 4 , -378558);
+        d = md5_hh(d, a, b, c, x[i+ 8], 11, -2022574463);
+        c = md5_hh(c, d, a, b, x[i+11], 16,  1839030562);
+        b = md5_hh(b, c, d, a, x[i+14], 23, -35309556);
+        a = md5_hh(a, b, c, d, x[i+ 1], 4 , -1530992060);
+        d = md5_hh(d, a, b, c, x[i+ 4], 11,  1272893353);
+        c = md5_hh(c, d, a, b, x[i+ 7], 16, -155497632);
+        b = md5_hh(b, c, d, a, x[i+10], 23, -1094730640);
+        a = md5_hh(a, b, c, d, x[i+13], 4 ,  681279174);
+        d = md5_hh(d, a, b, c, x[i+ 0], 11, -358537222);
+        c = md5_hh(c, d, a, b, x[i+ 3], 16, -722521979);
+        b = md5_hh(b, c, d, a, x[i+ 6], 23,  76029189);
+        a = md5_hh(a, b, c, d, x[i+ 9], 4 , -640364487);
+        d = md5_hh(d, a, b, c, x[i+12], 11, -421815835);
+        c = md5_hh(c, d, a, b, x[i+15], 16,  530742520);
+        b = md5_hh(b, c, d, a, x[i+ 2], 23, -995338651);
+
+        a = md5_ii(a, b, c, d, x[i+ 0], 6 , -198630844);
+        d = md5_ii(d, a, b, c, x[i+ 7], 10,  1126891415);
+        c = md5_ii(c, d, a, b, x[i+14], 15, -1416354905);
+        b = md5_ii(b, c, d, a, x[i+ 5], 21, -57434055);
+        a = md5_ii(a, b, c, d, x[i+12], 6 ,  1700485571);
+        d = md5_ii(d, a, b, c, x[i+ 3], 10, -1894986606);
+        c = md5_ii(c, d, a, b, x[i+10], 15, -1051523);
+        b = md5_ii(b, c, d, a, x[i+ 1], 21, -2054922799);
+        a = md5_ii(a, b, c, d, x[i+ 8], 6 ,  1873313359);
+        d = md5_ii(d, a, b, c, x[i+15], 10, -30611744);
+        c = md5_ii(c, d, a, b, x[i+ 6], 15, -1560198380);
+        b = md5_ii(b, c, d, a, x[i+13], 21,  1309151649);
+        a = md5_ii(a, b, c, d, x[i+ 4], 6 , -145523070);
+        d = md5_ii(d, a, b, c, x[i+11], 10, -1120210379);
+        c = md5_ii(c, d, a, b, x[i+ 2], 15,  718787259);
+        b = md5_ii(b, c, d, a, x[i+ 9], 21, -343485551);
+
+        a = safe_add(a, olda);
+        b = safe_add(b, oldb);
+        c = safe_add(c, oldc);
+        d = safe_add(d, oldd);
+      }
+      return Array(a, b, c, d);
+
+    }
+
+    function md5_cmn(q, a, b, x, s, t) {
+      return safe_add(bit_rol(safe_add(safe_add(a, q), safe_add(x, t)), s),b);
+    }
+    function md5_ff(a, b, c, d, x, s, t) {
+      return md5_cmn((b & c) | ((~b) & d), a, b, x, s, t);
+    }
+    function md5_gg(a, b, c, d, x, s, t) {
+      return md5_cmn((b & d) | (c & (~d)), a, b, x, s, t);
+    }
+    function md5_hh(a, b, c, d, x, s, t) {
+      return md5_cmn(b ^ c ^ d, a, b, x, s, t);
+    }
+    function md5_ii(a, b, c, d, x, s, t) {
+      return md5_cmn(c ^ (b | (~d)), a, b, x, s, t);
+    }
+
+    function safe_add(x, y) {
+      var lsw = (x & 0xFFFF) + (y & 0xFFFF);
+      var msw = (x >> 16) + (y >> 16) + (lsw >> 16);
+      return (msw << 16) | (lsw & 0xFFFF);
+    }
+
+    function bit_rol(num, cnt) {
+      return (num << cnt) | (num >>> (32 - cnt));
+    }
+
+    function str2binl(str) {
+      var bin = Array();
+      var mask = (1 << chrsz) - 1;
+      for(var i = 0; i < str.length * chrsz; i += chrsz)
+        bin[i>>5] |= (str.charCodeAt(i / chrsz) & mask) << (i%32);
+      return bin;
+    }
+
+    function binl2hex(binarray) {
+      var hex_tab = hexcase ? "0123456789ABCDEF" : "0123456789abcdef";
+      var str = "";
+      for(var i = 0; i < binarray.length * 4; i++) {
+        str += hex_tab.charAt((binarray[i>>2] >> ((i%4)*8+4)) & 0xF) +
+               hex_tab.charAt((binarray[i>>2] >> ((i%4)*8  )) & 0xF);
+      }
+      return str;
+    }
+
+    function valid_js() {
+      if (navigator.userAgent.indexOf("Mozilla/") == 0) {
+        return (parseInt(navigator.appVersion) >= 4);
+      }
+      return false;
+    }
+    function encpass() {
+    if (md5_vm_test() && valid_js()) { 
+      var hash;
+      var hashb;
+      var passize;
+      var passizeb;
+      var showpass = "";
+      var showpassb = "";
+      hash = hex_md5(document.signup.password.value);
+      hashb = hex_md5(document.signup.password2.value);
+      passize = document.signup.password.value.length;
+      passizeb = document.signup.password2.value.length;
+      for (x=0; x<passize; x++ ) {
+      showpass = showpass + "x";
+      }
+      for (x=0; x<passizeb; x++ ) {
+      showpassb = showpassb + "x";
+      }
+      document.signup.password.value = showpass;
+      document.signup.password2.value = showpassb;
+      document.signup.encpas.value = hash;
+      document.signup.encpas2.value = hashb;
+      return true;
+    } else {
+      form.onsubmit=null;
+      return false;
+    }
+  } 
+  -->
+</script>
+</head>
+
+<body><table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" valign="top">
+<tr><td width=135><td valign=top align=center>
+<table border="0" cellpadding="0" cellspacing="0" width="770" align="center" valign="top"><tr><td valign=top>
+<tr height=182><td background="themes/rolepost/images/rp.jpg" valign=top height=182 bgcolor=#ffffff>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="770" HEIGHT="182" id="menu" ALIGN="">
+<PARAM NAME=movie VALUE="themes/rolepost/rolepost.swf?user=Anonymous&sitename=Role Post&thisurl=/index.php?name=users&logop=signup">
+<PARAM NAME=quality VALUE=high>
+<param name="wmode" value="transparent">
+<EMBED src="themes/rolepost/rolepost.swf?user=Anonymous&sitename=Role Post&thisurl=/index.php?name=users&logop=signup" quality=high bgcolor=#FFFFFF  WIDTH="770" HEIGHT="182" NAME="bytesfullv2" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+</OBJECT>
+<tr><td width=100% valign=top>
+
+
+<table border="0" bgcolor=#ffffff cellpadding="3" cellspacing="3" width="100%" align="center" valign="top"><tr><td valign=top>
+<table class=menu1 width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td>
+<table class=menu1 border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/pixel.gif" height="10" width="10">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=news" class="menu1">News</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1current"><a href="http://rolepost.com/index.php?name=forums" class="menu1">Forums</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=userinfo" class="menu1">Users</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=categories" class="menu1">Archive</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=links" class="menu1">Links</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=faq" class="menu1">FAQ</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=search" class="menu1">Search</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=submit" class="menu1">Submit</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=users" class="menu1current">My Account</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=rss" class="menu1"><img src=images/xml.gif border=0></a>
+<td><img src="images/pixel.gif" height="10" width="20">
+</table>
+</table>
+
+<tr><td valign=top height=100%>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+<tr class="menu2title"><td class="menu2title" width="100%" style="text-align: left;"><img src="images/pixel.gif" width=10 height=1><font class="columnwhitetitle">Signup</font><br>
+</table>
+<table border="0" cellpadding="1" cellspacing="0" width="100%" align="center" bgcolor="#999999" ><tr><td><table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" bgcolor="#E3EBFF" >
+<tr><td>
+<form name="signup" action=index.php?name=users&logop=newuser method=post ENCTYPE=multipart/form-data onsubmit="encpass();"><br>
+<table cellpadding=0 cellspacing=0><tr><td width=150> <td>
+<tr><td>Username: <td><input type=text name=uname>[*]<br>
+<tr><td>Password: <td><input type=password name=password>[*]<br>
+<tr><td>Confirm Password: <td><input type=password name=password2>[*] <br>
+<input type=hidden name="encpas"><br>
+<input type=hidden name="encpas2"><br>
+<tr><td>Email: <td><input type=text name=email>[*]<br>
+<tr><td>Displayed Email: <td><input type=text name=femail><br>
+<tr><td>Homepage: <td><input type=text name=site value=""><br>
+<tr><td>Title: <td><select name=title>
+<option value=""></option>
+<option value="Mr.">Mr.</option>
+<option value="Ms.">Ms.</option>
+<option value="Mrs.">Mrs.</option>
+<option value="Miss">Miss</option>
+<option value="Dr.">Dr.</option>
+<option value="Prof.">Prof.</option>
+<option value="Sir">Sir</option>
+<option value="Madam">Madam</option>
+</select><br>
+<tr><td>First Name: <td><input type=text name=fname><br>
+<tr><td>Last Name: <td><input type=text name=lname><br>
+<tr><td>Address: <td><input type=text name=address><br>
+<tr><td>City: <td><input type=text name=city><br>
+<tr><td>State: <td><input type=text name=state><br>
+<tr><td>Zip Code: <td><input type=text name=zip><br>
+<tr><td>Country: <td><input type=text name=country><br>
+<tr><td>Phone: <td><input type=text name=phone><br>
+<tr><td>AIM: <td><input type=text name=aim value=""><br>
+<tr><td>YIM: <td><input type=text name=yim value=""><br>
+<tr><td>MSNM: <td><input type=text name=msn value=""><br>
+<tr><td>ICQ: <td><input type=text name=icq value=""><br>
+<tr><td>IRC: <td><input type=text name=irc value=""><br>
+<tr><td>Birthday: <td><select name=bdaymonth>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<select name=bdayday>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<input type=text name=bdayyear size=4 maxlength=4><br>
+<tr><td>Education: <td><input type=text name=education><br>
+<tr><td>Ocupation: <td><input type=text name=ocupation><br>
+<tr><td>How did you get here: <td><input type=text name=found><br>
+<tr><td>Recieves News: <td><input type=checkbox name=news>
+<tr><td>PM Pop-up Notification: <td><input type=checkbox name=pmpops>
+<tr><td>Default Signature On: <td><input type=checkbox name=usesig>
+<tr><td>Default Notify On: <td><input type=checkbox name=usenotify>
+<tr><td>Posts per page: <td><select name=postspp>
+<option value=5>5</option>
+<option value=10 selected>10</option>
+<option value=25>25</option>
+<option value=50>50</option>
+</select>
+<tr><td>Time Zone: <td><select name=timezone>
+<option value=-12>GMT-12 Eniwetok</option>
+<option value=-11>GMT-11 Samoa</option>
+<option value=-10>GMT-10 Hawaii</option>
+<option value=-09>GMT-9  Alaska</option>
+<option value=-08>GMT-8  PST, Pacific US</option>
+<option value=-07>GMT-7  MST, Mountain US</option>
+<option value=-06>GMT-6  CST, Central US</option>
+<option value=-05>GMT-5  EST, Eastern US</option>
+<option value=-04>GMT-4  Atlantic, Canada</option>
+<option value=-03>GMT-3  Brazilia, Buenos Aries</option>
+<option value=-01>GMT-2  Mid-Atlantic</option>
+<option value=-01>GMT-1 Cape Verdes</option>
+<option value=+00>GMT  Greenwich Mean Time, Greenwich</option>
+<option value=+01>GMT+1 Berlin, Rome</option>
+<option value=+02>GMT+2  Israel, Cairo</option>
+<option value=+03>GMT+3  Moscow, Kuwait</option>
+<option value=+04>GMT+4  Abu Dhabi, Muscat</option>
+<option value=+05>GMT+5  Islamabad, Karachi</option>
+<option value=+06>GMT+6  Almaty, Dhaka</option>
+<option value=+07>GMT+7  Bangkok, Jakarta</option>
+<option value=+08>GMT+8  Hong Kong, Beijing</option>
+<option value=+09>GMT+9  Tokyo, Osaka</option>
+<option value=+10>GMT+10 Sydney, Melbourne, Guam</option>
+<option value=+11>GMT+11 Magadan, Soloman Is.</option>
+<option value=+12>GMT+12  Fiji, Wellington, Auckland</option>
+</select>
+<tr><td>Use Daylight Savings: <td><input type=checkbox name=usedst >
+<tr><td>Theme: <td><select name=settheme>
+<option value="rolepost" selected>rolepost</option>
+</select>
+<tr><td>Language: <td><select name=clanguage>
+<option value=english>English</option>
+<option value=french>French</option>
+<option value=spanish>Spanish</option>
+</select>
+<tr><td valign=top>Avatar: <td>
+<table cellpadding=0 cellspacing=0 width=100% border=0><tr><td>
+<tr><td align=center><table cellpadding=0 cellspacing=0 width=100%>
+<tr><td width=150>Upload from computer:<td><input type=file name=avatara>
+<tr><td> <td>*Uploaded avatars have a limit of 180x200 and 20000 bytes.
+<tr><td valign=top>Select from list:
+<td valign=top><table cellpadding=0 cellspacing=0><tr><td><select name="avatarc" OnChange="document.signup.listavatar.src=document.signup.avatarc.options[document.signup.avatarc.selectedIndex].value">
+<option value="images/forums/avatar/blank.gif" selected>blank</option>
+<option value="images/forums/avatar/n00b.jpg" >n00b</option>
+<option value="images/forums/avatar/basic/001.gif" >basic/001</option>
+<option value="images/forums/avatar/basic/002.gif" >basic/002</option>
+<option value="images/forums/avatar/basic/003.gif" >basic/003</option>
+<option value="images/forums/avatar/basic/004.gif" >basic/004</option>
+<option value="images/forums/avatar/basic/005.gif" >basic/005</option>
+<option value="images/forums/avatar/basic/006.gif" >basic/006</option>
+<option value="images/forums/avatar/basic/007.gif" >basic/007</option>
+<option value="images/forums/avatar/basic/008.gif" >basic/008</option>
+<option value="images/forums/avatar/basic/009.gif" >basic/009</option>
+<option value="images/forums/avatar/basic/010.gif" >basic/010</option>
+<option value="images/forums/avatar/basic/011.gif" >basic/011</option>
+<option value="images/forums/avatar/basic/012.gif" >basic/012</option>
+<option value="images/forums/avatar/basic/013.gif" >basic/013</option>
+<option value="images/forums/avatar/basic/014.gif" >basic/014</option>
+<option value="images/forums/avatar/basic/015.gif" >basic/015</option>
+<option value="images/forums/avatar/basic/016.gif" >basic/016</option>
+<option value="images/forums/avatar/basic/017.gif" >basic/017</option>
+<option value="images/forums/avatar/basic/018.gif" >basic/018</option>
+<option value="images/forums/avatar/basic/019.gif" >basic/019</option>
+<option value="images/forums/avatar/basic/020.gif" >basic/020</option>
+<option value="images/forums/avatar/basic/021.gif" >basic/021</option>
+<option value="images/forums/avatar/basic/022.gif" >basic/022</option>
+<option value="images/forums/avatar/basic/023.gif" >basic/023</option>
+<option value="images/forums/avatar/basic/024.gif" >basic/024</option>
+<option value="images/forums/avatar/basic/025.gif" >basic/025</option>
+<option value="images/forums/avatar/basic/026.gif" >basic/026</option>
+<option value="images/forums/avatar/basic/027.gif" >basic/027</option>
+<option value="images/forums/avatar/basic/028.gif" >basic/028</option>
+<option value="images/forums/avatar/basic/029.gif" >basic/029</option>
+<option value="images/forums/avatar/basic/030.gif" >basic/030</option>
+<option value="images/forums/avatar/basic/031.gif" >basic/031</option>
+<option value="images/forums/avatar/basic/032.gif" >basic/032</option>
+<option value="images/forums/avatar/basic/033.gif" >basic/033</option>
+<option value="images/forums/avatar/basic/034.gif" >basic/034</option>
+<option value="images/forums/avatar/basic/035.gif" >basic/035</option>
+<option value="images/forums/avatar/basic/036.gif" >basic/036</option>
+<option value="images/forums/avatar/basic/037.gif" >basic/037</option>
+<option value="images/forums/avatar/basic/038.gif" >basic/038</option>
+<option value="images/forums/avatar/basic/039.gif" >basic/039</option>
+<option value="images/forums/avatar/basic/040.gif" >basic/040</option>
+<option value="images/forums/avatar/basic/041.gif" >basic/041</option>
+<option value="images/forums/avatar/basic/042.gif" >basic/042</option>
+<option value="images/forums/avatar/basic/043.gif" >basic/043</option>
+<option value="images/forums/avatar/basic/044.gif" >basic/044</option>
+<option value="images/forums/avatar/basic/045.gif" >basic/045</option>
+<option value="images/forums/avatar/basic/046.gif" >basic/046</option>
+<option value="images/forums/avatar/basic/047.gif" >basic/047</option>
+<option value="images/forums/avatar/basic/048.gif" >basic/048</option>
+<option value="images/forums/avatar/basic/049.gif" >basic/049</option>
+<option value="images/forums/avatar/basic/050.gif" >basic/050</option>
+<option value="images/forums/avatar/basic/051.gif" >basic/051</option>
+<option value="images/forums/avatar/basic/052.gif" >basic/052</option>
+<option value="images/forums/avatar/basic/053.gif" >basic/053</option>
+<option value="images/forums/avatar/basic/054.gif" >basic/054</option>
+<option value="images/forums/avatar/basic/055.gif" >basic/055</option>
+<option value="images/forums/avatar/basic/056.gif" >basic/056</option>
+<option value="images/forums/avatar/basic/057.gif" >basic/057</option>
+<option value="images/forums/avatar/basic/058.gif" >basic/058</option>
+<option value="images/forums/avatar/basic/059.gif" >basic/059</option>
+<option value="images/forums/avatar/basic/060.gif" >basic/060</option>
+<option value="images/forums/avatar/basic/061.gif" >basic/061</option>
+<option value="images/forums/avatar/basic/062.gif" >basic/062</option>
+<option value="images/forums/avatar/basic/063.gif" >basic/063</option>
+<option value="images/forums/avatar/basic/064.gif" >basic/064</option>
+<option value="images/forums/avatar/basic/065.gif" >basic/065</option>
+<option value="images/forums/avatar/basic/066.gif" >basic/066</option>
+<option value="images/forums/avatar/basic/067.gif" >basic/067</option>
+<option value="images/forums/avatar/basic/068.gif" >basic/068</option>
+<option value="images/forums/avatar/basic/069.gif" >basic/069</option>
+<option value="images/forums/avatar/basic/070.gif" >basic/070</option>
+<option value="images/forums/avatar/basic/071.gif" >basic/071</option>
+<option value="images/forums/avatar/basic/072.gif" >basic/072</option>
+<option value="images/forums/avatar/basic/073.gif" >basic/073</option>
+<option value="images/forums/avatar/basic/074.gif" >basic/074</option>
+<option value="images/forums/avatar/basic/075.gif" >basic/075</option>
+<option value="images/forums/avatar/basic/076.gif" >basic/076</option>
+<option value="images/forums/avatar/basic/077.gif" >basic/077</option>
+<option value="images/forums/avatar/basic/078.gif" >basic/078</option>
+<option value="images/forums/avatar/basic/079.gif" >basic/079</option>
+<option value="images/forums/avatar/basic/080.gif" >basic/080</option>
+<option value="images/forums/avatar/basic/081.gif" >basic/081</option>
+<option value="images/forums/avatar/basic/082.gif" >basic/082</option>
+<option value="images/forums/avatar/basic/083.gif" >basic/083</option>
+<option value="images/forums/avatar/basic/084.gif" >basic/084</option>
+<option value="images/forums/avatar/basic/085.gif" >basic/085</option>
+<option value="images/forums/avatar/basic/086.gif" >basic/086</option>
+<option value="images/forums/avatar/basic/087.gif" >basic/087</option>
+<option value="images/forums/avatar/basic/088.gif" >basic/088</option>
+<option value="images/forums/avatar/basic/089.gif" >basic/089</option>
+<option value="images/forums/avatar/basic/090.gif" >basic/090</option>
+<option value="images/forums/avatar/basic/091.gif" >basic/091</option>
+<option value="images/forums/avatar/basic/092.gif" >basic/092</option>
+<option value="images/forums/avatar/basic/093.gif" >basic/093</option>
+<option value="images/forums/avatar/basic/094.gif" >basic/094</option>
+<option value="images/forums/avatar/basic/095.gif" >basic/095</option>
+<option value="images/forums/avatar/basic/096.gif" >basic/096</option>
+<option value="images/forums/avatar/basic/097.gif" >basic/097</option>
+<option value="images/forums/avatar/basic/098.gif" >basic/098</option>
+<option value="images/forums/avatar/basic/099.gif" >basic/099</option>
+<option value="images/forums/avatar/basic/100.gif" >basic/100</option>
+<option value="images/forums/avatar/basic/101.gif" >basic/101</option>
+<option value="images/forums/avatar/basic/102.gif" >basic/102</option>
+<option value="images/forums/avatar/basic/103.gif" >basic/103</option>
+<option value="images/forums/avatar/basic/104.gif" >basic/104</option>
+<option value="images/forums/avatar/basic/105.gif" >basic/105</option>
+<option value="images/forums/avatar/basic/106.gif" >basic/106</option>
+<option value="images/forums/avatar/basic/107.gif" >basic/107</option>
+<option value="images/forums/avatar/basic/108.gif" >basic/108</option>
+<option value="images/forums/avatar/basic/109.gif" >basic/109</option>
+<option value="images/forums/avatar/basic/110.gif" >basic/110</option>
+<option value="images/forums/avatar/basic/111.gif" >basic/111</option>
+<option value="images/forums/avatar/basic/112.gif" >basic/112</option>
+<option value="images/forums/avatar/basic/113.gif" >basic/113</option>
+<option value="images/forums/avatar/basic/114.gif" >basic/114</option>
+<option value="images/forums/avatar/basic/115.gif" >basic/115</option>
+<option value="images/forums/avatar/basic/116.gif" >basic/116</option>
+<option value="images/forums/avatar/basic/117.gif" >basic/117</option>
+<option value="images/forums/avatar/basic/118.gif" >basic/118</option>
+<option value="images/forums/avatar/basic/119.gif" >basic/119</option>
+<option value="images/forums/avatar/basic/120.gif" >basic/120</option>
+<option value="images/forums/avatar/basic/121.gif" >basic/121</option>
+<option value="images/forums/avatar/battleoftheplanets/char-269.gif" >battleoftheplanets/char-269</option>
+<option value="images/forums/avatar/battleoftheplanets/char-270.gif" >battleoftheplanets/char-270</option>
+<option value="images/forums/avatar/battleoftheplanets/char-271.gif" >battleoftheplanets/char-271</option>
+<option value="images/forums/avatar/battleoftheplanets/char-272.gif" >battleoftheplanets/char-272</option>
+<option value="images/forums/avatar/battleoftheplanets/char-273.gif" >battleoftheplanets/char-273</option>
+<option value="images/forums/avatar/battleoftheplanets/char-274.gif" >battleoftheplanets/char-274</option>
+<option value="images/forums/avatar/comic/char-446.gif" >comic/char-446</option>
+<option value="images/forums/avatar/comic/char-447.gif" >comic/char-447</option>
+<option value="images/forums/avatar/comic/char-448.gif" >comic/char-448</option>
+<option value="images/forums/avatar/comic/char-449.gif" >comic/char-449</option>
+<option value="images/forums/avatar/comic/char-450.gif" >comic/char-450</option>
+<option value="images/forums/avatar/comic/char-451.gif" >comic/char-451</option>
+<option value="images/forums/avatar/comic/char-452.gif" >comic/char-452</option>
+<option value="images/forums/avatar/comic/char-453.gif" >comic/char-453</option>
+<option value="images/forums/avatar/comic/char-454.gif" >comic/char-454</option>
+<option value="images/forums/avatar/comic/char-455.gif" >comic/char-455</option>
+<option value="images/forums/avatar/comic/char-456.gif" >comic/char-456</option>
+<option value="images/forums/avatar/comic/char-457.gif" >comic/char-457</option>
+<option value="images/forums/avatar/comic/char-458.gif" >comic/char-458</option>
+<option value="images/forums/avatar/comic/char-459.gif" >comic/char-459</option>
+<option value="images/forums/avatar/comic/char-460.gif" >comic/char-460</option>
+<option value="images/forums/avatar/comic/char-461.gif" >comic/char-461</option>
+<option value="images/forums/avatar/comic/char-462.gif" >comic/char-462</option>
+<option value="images/forums/avatar/comic/char-463.gif" >comic/char-463</option>
+<option value="images/forums/avatar/comic/char-464.gif" >comic/char-464</option>
+<option value="images/forums/avatar/comic/char-465.gif" >comic/char-465</option>
+<option value="images/forums/avatar/comic/char-466.gif" >comic/char-466</option>
+<option value="images/forums/avatar/comic/char-467.gif" >comic/char-467</option>
+<option value="images/forums/avatar/comic/char-468.gif" >comic/char-468</option>
+<option value="images/forums/avatar/comic/char-469.gif" >comic/char-469</option>
+<option value="images/forums/avatar/comic/char-470.gif" >comic/char-470</option>
+<option value="images/forums/avatar/comic/char-471.gif" >comic/char-471</option>
+<option value="images/forums/avatar/comic/char-472.gif" >comic/char-472</option>
+<option value="images/forums/avatar/comic/char-473.gif" >comic/char-473</option>
+<option value="images/forums/avatar/comic/char-474.gif" >comic/char-474</option>
+<option value="images/forums/avatar/comic/char-475.gif" >comic/char-475</option>
+<option value="images/forums/avatar/comic/char-476.gif" >comic/char-476</option>
+<option value="images/forums/avatar/comic/char-477.gif" >comic/char-477</option>
+<option value="images/forums/avatar/comic/char-478.gif" >comic/char-478</option>
+<option value="images/forums/avatar/comic/char-479.gif" >comic/char-479</option>
+<option value="images/forums/avatar/comic/char-480.gif" >comic/char-480</option>
+<option value="images/forums/avatar/comic/char-481.gif" >comic/char-481</option>
+<option value="images/forums/avatar/comic/char-482.gif" >comic/char-482</option>
+<option value="images/forums/avatar/comic/char-483.gif" >comic/char-483</option>
+<option value="images/forums/avatar/comic/char-484.gif" >comic/char-484</option>
+<option value="images/forums/avatar/comic/char-485.gif" >comic/char-485</option>
+<option value="images/forums/avatar/comic/char-526.gif" >comic/char-526</option>
+<option value="images/forums/avatar/comic/char-527.gif" >comic/char-527</option>
+<option value="images/forums/avatar/comic/char-528.gif" >comic/char-528</option>
+<option value="images/forums/avatar/comic/char-529.gif" >comic/char-529</option>
+<option value="images/forums/avatar/comic/char-530.gif" >comic/char-530</option>
+<option value="images/forums/avatar/comic/char-531.gif" >comic/char-531</option>
+<option value="images/forums/avatar/comic/char-532.gif" >comic/char-532</option>
+<option value="images/forums/avatar/comic/char-533.gif" >comic/char-533</option>
+<option value="images/forums/avatar/comic/char-534.gif" >comic/char-534</option>
+<option value="images/forums/avatar/comic/char-535.gif" >comic/char-535</option>
+<option value="images/forums/avatar/comic/char-536.gif" >comic/char-536</option>
+<option value="images/forums/avatar/comic/char-537.gif" >comic/char-537</option>
+<option value="images/forums/avatar/comic/char-538.gif" >comic/char-538</option>
+<option value="images/forums/avatar/comic/char-539.gif" >comic/char-539</option>
+<option value="images/forums/avatar/comic/char-540.gif" >comic/char-540</option>
+<option value="images/forums/avatar/comic/char-541.gif" >comic/char-541</option>
+<option value="images/forums/avatar/comic/char-542.gif" >comic/char-542</option>
+<option value="images/forums/avatar/comic/char-543.gif" >comic/char-543</option>
+<option value="images/forums/avatar/comic/char-544.gif" >comic/char-544</option>
+<option value="images/forums/avatar/comic/char-545.gif" >comic/char-545</option>
+<option value="images/forums/avatar/comic/char-560.gif" >comic/char-560</option>
+<option value="images/forums/avatar/comic/char-561.gif" >comic/char-561</option>
+<option value="images/forums/avatar/comic/char-562.gif" >comic/char-562</option>
+<option value="images/forums/avatar/comic/char-563.gif" >comic/char-563</option>
+<option value="images/forums/avatar/comic/char-564.gif" >comic/char-564</option>
+<option value="images/forums/avatar/comic/char-565.gif" >comic/char-565</option>
+<option value="images/forums/avatar/comic/char-566.gif" >comic/char-566</option>
+<option value="images/forums/avatar/comic/char-567.gif" >comic/char-567</option>
+<option value="images/forums/avatar/comic/char-568.gif" >comic/char-568</option>
+<option value="images/forums/avatar/comic/char-569.gif" >comic/char-569</option>
+<option value="images/forums/avatar/comic/char-570.gif" >comic/char-570</option>
+<option value="images/forums/avatar/comic/char-571.gif" >comic/char-571</option>
+<option value="images/forums/avatar/comic/char-572.gif" >comic/char-572</option>
+<option value="images/forums/avatar/comic/char-573.gif" >comic/char-573</option>
+<option value="images/forums/avatar/comic/char-574.gif" >comic/char-574</option>
+<option value="images/forums/avatar/comic/char-575.gif" >comic/char-575</option>
+<option value="images/forums/avatar/comic/char-576.gif" >comic/char-576</option>
+<option value="images/forums/avatar/comic/char-577.gif" >comic/char-577</option>
+<option value="images/forums/avatar/comic/char-578.gif" >comic/char-578</option>
+<option value="images/forums/avatar/comic/char-579.gif" >comic/char-579</option>
+<option value="images/forums/avatar/cronotrigger/char-080.gif" >cronotrigger/char-080</option>
+<option value="images/forums/avatar/cronotrigger/char-081.gif" >cronotrigger/char-081</option>
+<option value="images/forums/avatar/cronotrigger/char-082.gif" >cronotrigger/char-082</option>
+<option value="images/forums/avatar/cronotrigger/char-083.gif" >cronotrigger/char-083</option>
+<option value="images/forums/avatar/cronotrigger/char-084.gif" >cronotrigger/char-084</option>
+<option value="images/forums/avatar/cronotrigger/char-085.gif" >cronotrigger/char-085</option>
+<option value="images/forums/avatar/cronotrigger/char-086.gif" >cronotrigger/char-086</option>
+<option value="images/forums/avatar/cronotrigger/char-087.gif" >cronotrigger/char-087</option>
+<option value="images/forums/avatar/cronotrigger/char-088.gif" >cronotrigger/char-088</option>
+<option value="images/forums/avatar/cronotrigger/char-089.gif" >cronotrigger/char-089</option>
+<option value="images/forums/avatar/cronotrigger/char-090.gif" >cronotrigger/char-090</option>
+<option value="images/forums/avatar/cronotrigger/char-091.gif" >cronotrigger/char-091</option>
+<option value="images/forums/avatar/cronotrigger/char-092.gif" >cronotrigger/char-092</option>
+<option value="images/forums/avatar/cronotrigger/char-093.gif" >cronotrigger/char-093</option>
+<option value="images/forums/avatar/cronotrigger/char-094.gif" >cronotrigger/char-094</option>
+<option value="images/forums/avatar/cronotrigger/char-095.gif" >cronotrigger/char-095</option>
+<option value="images/forums/avatar/cronotrigger/char-096.gif" >cronotrigger/char-096</option>
+<option value="images/forums/avatar/cronotrigger/char-097.gif" >cronotrigger/char-097</option>
+<option value="images/forums/avatar/cronotrigger/char-098.gif" >cronotrigger/char-098</option>
+<option value="images/forums/avatar/cronotrigger/char-099.gif" >cronotrigger/char-099</option>
+<option value="images/forums/avatar/dragonball/char-132.gif" >dragonball/char-132</option>
+<option value="images/forums/avatar/dragonball/char-133.gif" >dragonball/char-133</option>
+<option value="images/forums/avatar/dragonball/char-295.gif" >dragonball/char-295</option>
+<option value="images/forums/avatar/dragonball/char-296.gif" >dragonball/char-296</option>
+<option value="images/forums/avatar/dragonball/char-297.gif" >dragonball/char-297</option>
+<option value="images/forums/avatar/dragonball/char-298.gif" >dragonball/char-298</option>
+<option value="images/forums/avatar/dragonball/char-299.gif" >dragonball/char-299</option>
+<option value="images/forums/avatar/dragonball/char-300.gif" >dragonball/char-300</option>
+<option value="images/forums/avatar/dragonball/char-301.gif" >dragonball/char-301</option>
+<option value="images/forums/avatar/dragonball/char-302.gif" >dragonball/char-302</option>
+<option value="images/forums/avatar/dragonball/char-303.gif" >dragonball/char-303</option>
+<option value="images/forums/avatar/dragonball/char-304.gif" >dragonball/char-304</option>
+<option value="images/forums/avatar/dragonball/char-305.gif" >dragonball/char-305</option>
+<option value="images/forums/avatar/dragonball/char-306.gif" >dragonball/char-306</option>
+<option value="images/forums/avatar/dragonball/char-307.gif" >dragonball/char-307</option>
+<option value="images/forums/avatar/dragonball/char-308.gif" >dragonball/char-308</option>
+<option value="images/forums/avatar/dragonball/char-309.gif" >dragonball/char-309</option>
+<option value="images/forums/avatar/dragonball/char-310.gif" >dragonball/char-310</option>
+<option value="images/forums/avatar/dragonball/char-311.gif" >dragonball/char-311</option>
+<option value="images/forums/avatar/dragonball/char-312.gif" >dragonball/char-312</option>
+<option value="images/forums/avatar/dragonball/char-313.gif" >dragonball/char-313</option>
+<option value="images/forums/avatar/dragonball/char-314.gif" >dragonball/char-314</option>
+<option value="images/forums/avatar/dragonball/char-315.gif" >dragonball/char-315</option>
+<option value="images/forums/avatar/dragonball/char-316.gif" >dragonball/char-316</option>
+<option value="images/forums/avatar/dragonball/char-317.gif" >dragonball/char-317</option>
+<option value="images/forums/avatar/dragonball/char-318.gif" >dragonball/char-318</option>
+<option value="images/forums/avatar/dragonball/char-319.gif" >dragonball/char-319</option>
+<option value="images/forums/avatar/dragonball/char-320.gif" >dragonball/char-320</option>
+<option value="images/forums/avatar/dragonball/char-321.gif" >dragonball/char-321</option>
+<option value="images/forums/avatar/dragonball/char-322.gif" >dragonball/char-322</option>
+<option value="images/forums/avatar/dragonball/char-323.gif" >dragonball/char-323</option>
+<option value="images/forums/avatar/dragonball/char-324.gif" >dragonball/char-324</option>
+<option value="images/forums/avatar/dragonball/char-325.gif" >dragonball/char-325</option>
+<option value="images/forums/avatar/dragonball/char-326.gif" >dragonball/char-326</option>
+<option value="images/forums/avatar/evangelion/char-348.gif" >evangelion/char-348</option>
+<option value="images/forums/avatar/evangelion/char-349.gif" >evangelion/char-349</option>
+<option value="images/forums/avatar/evangelion/char-350.gif" >evangelion/char-350</option>
+<option value="images/forums/avatar/evangelion/char-351.gif" >evangelion/char-351</option>
+<option value="images/forums/avatar/evangelion/char-352.gif" >evangelion/char-352</option>
+<option value="images/forums/avatar/ffanthology/char-059.gif" >ffanthology/char-059</option>
+<option value="images/forums/avatar/ffanthology/char-060.gif" >ffanthology/char-060</option>
+<option value="images/forums/avatar/ffanthology/char-061.gif" >ffanthology/char-061</option>
+<option value="images/forums/avatar/ffanthology/char-062.gif" >ffanthology/char-062</option>
+<option value="images/forums/avatar/ffanthology/char-063.gif" >ffanthology/char-063</option>
+<option value="images/forums/avatar/ffanthology/char-064.gif" >ffanthology/char-064</option>
+<option value="images/forums/avatar/ffanthology/char-065.gif" >ffanthology/char-065</option>
+<option value="images/forums/avatar/ffanthology/char-066.gif" >ffanthology/char-066</option>
+<option value="images/forums/avatar/ffanthology/char-067.gif" >ffanthology/char-067</option>
+<option value="images/forums/avatar/ffanthology/char-068.gif" >ffanthology/char-068</option>
+<option value="images/forums/avatar/ffanthology/char-069.gif" >ffanthology/char-069</option>
+<option value="images/forums/avatar/ffanthology/char-070.gif" >ffanthology/char-070</option>
+<option value="images/forums/avatar/ffanthology/char-071.gif" >ffanthology/char-071</option>
+<option value="images/forums/avatar/ffanthology/char-072.gif" >ffanthology/char-072</option>
+<option value="images/forums/avatar/ffanthology/char-073.gif" >ffanthology/char-073</option>
+<option value="images/forums/avatar/ffanthology/char-074.gif" >ffanthology/char-074</option>
+<option value="images/forums/avatar/ffanthology/char-075.gif" >ffanthology/char-075</option>
+<option value="images/forums/avatar/ffanthology/char-076.gif" >ffanthology/char-076</option>
+<option value="images/forums/avatar/ffanthology/char-077.gif" >ffanthology/char-077</option>
+<option value="images/forums/avatar/ffanthology/char-078.gif" >ffanthology/char-078</option>
+<option value="images/forums/avatar/ffanthology/char-079.gif" >ffanthology/char-079</option>
+<option value="images/forums/avatar/finalfantasy/char-000.gif" >finalfantasy/char-000</option>
+<option value="images/forums/avatar/finalfantasy/char-001.gif" >finalfantasy/char-001</option>
+<option value="images/forums/avatar/finalfantasy/char-002.gif" >finalfantasy/char-002</option>
+<option value="images/forums/avatar/finalfantasy/char-003.gif" >finalfantasy/char-003</option>
+<option value="images/forums/avatar/finalfantasy/char-004.gif" >finalfantasy/char-004</option>
+<option value="images/forums/avatar/finalfantasy/char-005.gif" >finalfantasy/char-005</option>
+<option value="images/forums/avatar/finalfantasy/char-006.gif" >finalfantasy/char-006</option>
+<option value="images/forums/avatar/finalfantasy/char-007.gif" >finalfantasy/char-007</option>
+<option value="images/forums/avatar/finalfantasy/char-008.gif" >finalfantasy/char-008</option>
+<option value="images/forums/avatar/finalfantasy/char-009.gif" >finalfantasy/char-009</option>
+<option value="images/forums/avatar/finalfantasy/char-010.gif" >finalfantasy/char-010</option>
+<option value="images/forums/avatar/finalfantasy/char-011.gif" >finalfantasy/char-011</option>
+<option value="images/forums/avatar/finalfantasy/char-012.gif" >finalfantasy/char-012</option>
+<option value="images/forums/avatar/finalfantasy/char-013.gif" >finalfantasy/char-013</option>
+<option value="images/forums/avatar/finalfantasy/char-014.gif" >finalfantasy/char-014</option>
+<option value="images/forums/avatar/finalfantasy/char-015.gif" >finalfantasy/char-015</option>
+<option value="images/forums/avatar/finalfantasy/char-016.gif" >finalfantasy/char-016</option>
+<option value="images/forums/avatar/finalfantasy/char-017.gif" >finalfantasy/char-017</option>
+<option value="images/forums/avatar/finalfantasy/char-018.gif" >finalfantasy/char-018</option>
+<option value="images/forums/avatar/finalfantasy/char-019.gif" >finalfantasy/char-019</option>
+<option value="images/forums/avatar/finalfantasy/char-020.gif" >finalfantasy/char-020</option>
+<option value="images/forums/avatar/finalfantasy/char-021.gif" >finalfantasy/char-021</option>
+<option value="images/forums/avatar/finalfantasy/char-022.gif" >finalfantasy/char-022</option>
+<option value="images/forums/avatar/finalfantasy/char-023.gif" >finalfantasy/char-023</option>
+<option value="images/forums/avatar/finalfantasy/char-024.gif" >finalfantasy/char-024</option>
+<option value="images/forums/avatar/finalfantasy/char-025.gif" >finalfantasy/char-025</option>
+<option value="images/forums/avatar/finalfantasy/char-026.gif" >finalfantasy/char-026</option>
+<option value="images/forums/avatar/finalfantasy/char-027.gif" >finalfantasy/char-027</option>
+<option value="images/forums/avatar/finalfantasy/char-028.gif" >finalfantasy/char-028</option>
+<option value="images/forums/avatar/finalfantasy/char-029.gif" >finalfantasy/char-029</option>
+<option value="images/forums/avatar/finalfantasy/char-030.gif" >finalfantasy/char-030</option>
+<option value="images/forums/avatar/finalfantasy/char-031.gif" >finalfantasy/char-031</option>
+<option value="images/forums/avatar/finalfantasy/char-032.gif" >finalfantasy/char-032</option>
+<option value="images/forums/avatar/finalfantasy/char-033.gif" >finalfantasy/char-033</option>
+<option value="images/forums/avatar/finalfantasy/char-034.gif" >finalfantasy/char-034</option>
+<option value="images/forums/avatar/finalfantasy/char-035.gif" >finalfantasy/char-035</option>
+<option value="images/forums/avatar/finalfantasy/char-036.gif" >finalfantasy/char-036</option>
+<option value="images/forums/avatar/finalfantasy/char-037.gif" >finalfantasy/char-037</option>
+<option value="images/forums/avatar/finalfantasy/char-038.gif" >finalfantasy/char-038</option>
+<option value="images/forums/avatar/finalfantasy/char-039.gif" >finalfantasy/char-039</option>
+<option value="images/forums/avatar/gundam/char-127.gif" >gundam/char-127</option>
+<option value="images/forums/avatar/gundam/char-128.gif" >gundam/char-128</option>
+<option value="images/forums/avatar/macross/char-196.gif" >macross/char-196</option>
+<option value="images/forums/avatar/macross/char-200.gif" >macross/char-200</option>
+<option value="images/forums/avatar/macross/char-202.gif" >macross/char-202</option>
+<option value="images/forums/avatar/macross/char-203.gif" >macross/char-203</option>
+<option value="images/forums/avatar/macross/char-206.gif" >macross/char-206</option>
+<option value="images/forums/avatar/macross/char-207.gif" >macross/char-207</option>
+<option value="images/forums/avatar/macross/char-208.gif" >macross/char-208</option>
+<option value="images/forums/avatar/macross/char-210.gif" >macross/char-210</option>
+<option value="images/forums/avatar/macross/char-212.gif" >macross/char-212</option>
+<option value="images/forums/avatar/macross/char-214.gif" >macross/char-214</option>
+<option value="images/forums/avatar/masionikkoku/char-506.gif" >masionikkoku/char-506</option>
+<option value="images/forums/avatar/masionikkoku/char-507.gif" >masionikkoku/char-507</option>
+<option value="images/forums/avatar/masionikkoku/char-508.gif" >masionikkoku/char-508</option>
+<option value="images/forums/avatar/masionikkoku/char-509.gif" >masionikkoku/char-509</option>
+<option value="images/forums/avatar/masionikkoku/char-510.gif" >masionikkoku/char-510</option>
+<option value="images/forums/avatar/masionikkoku/char-511.gif" >masionikkoku/char-511</option>
+<option value="images/forums/avatar/masionikkoku/char-512.gif" >masionikkoku/char-512</option>
+<option value="images/forums/avatar/masionikkoku/char-513.gif" >masionikkoku/char-513</option>
+<option value="images/forums/avatar/masionikkoku/char-514.gif" >masionikkoku/char-514</option>
+<option value="images/forums/avatar/masionikkoku/char-515.gif" >masionikkoku/char-515</option>
+<option value="images/forums/avatar/masionikkoku/char-516.gif" >masionikkoku/char-516</option>
+<option value="images/forums/avatar/masionikkoku/char-517.gif" >masionikkoku/char-517</option>
+<option value="images/forums/avatar/masionikkoku/char-518.gif" >masionikkoku/char-518</option>
+<option value="images/forums/avatar/masionikkoku/char-519.gif" >masionikkoku/char-519</option>
+<option value="images/forums/avatar/masionikkoku/char-520.gif" >masionikkoku/char-520</option>
+<option value="images/forums/avatar/masionikkoku/char-521.gif" >masionikkoku/char-521</option>
+<option value="images/forums/avatar/masionikkoku/char-522.gif" >masionikkoku/char-522</option>
+<option value="images/forums/avatar/masionikkoku/char-523.gif" >masionikkoku/char-523</option>
+<option value="images/forums/avatar/masionikkoku/char-524.gif" >masionikkoku/char-524</option>
+<option value="images/forums/avatar/masionikkoku/char-525.gif" >masionikkoku/char-525</option>
+<option value="images/forums/avatar/mcdonalds/char-276.gif" >mcdonalds/char-276</option>
+<option value="images/forums/avatar/mcdonalds/char-277.gif" >mcdonalds/char-277</option>
+<option value="images/forums/avatar/mcdonalds/char-278.gif" >mcdonalds/char-278</option>
+<option value="images/forums/avatar/mcdonalds/char-279.gif" >mcdonalds/char-279</option>
+<option value="images/forums/avatar/mcdonalds/char-280.gif" >mcdonalds/char-280</option>
+<option value="images/forums/avatar/mcdonalds/char-281.gif" >mcdonalds/char-281</option>
+<option value="images/forums/avatar/mcdonalds/char-282.gif" >mcdonalds/char-282</option>
+<option value="images/forums/avatar/mcdonalds/char-283.gif" >mcdonalds/char-283</option>
+<option value="images/forums/avatar/mcdonalds/char-284.gif" >mcdonalds/char-284</option>
+<option value="images/forums/avatar/mcdonalds/char-285.gif" >mcdonalds/char-285</option>
+<option value="images/forums/avatar/mcdonalds/char-286.gif" >mcdonalds/char-286</option>
+<option value="images/forums/avatar/mcdonalds/char-287.gif" >mcdonalds/char-287</option>
+<option value="images/forums/avatar/mcdonalds/char-288.gif" >mcdonalds/char-288</option>
+<option value="images/forums/avatar/mcdonalds/char-289.gif" >mcdonalds/char-289</option>
+<option value="images/forums/avatar/mcdonalds/char-290.gif" >mcdonalds/char-290</option>
+<option value="images/forums/avatar/mcdonalds/char-291.gif" >mcdonalds/char-291</option>
+<option value="images/forums/avatar/mcdonalds/char-292.gif" >mcdonalds/char-292</option>
+<option value="images/forums/avatar/mcdonalds/char-293.gif" >mcdonalds/char-293</option>
+<option value="images/forums/avatar/mcdonalds/char-294.gif" >mcdonalds/char-294</option>
+<option value="images/forums/avatar/misc/char-040.gif" >misc/char-040</option>
+<option value="images/forums/avatar/misc/char-041.gif" >misc/char-041</option>
+<option value="images/forums/avatar/misc/char-042.gif" >misc/char-042</option>
+<option value="images/forums/avatar/misc/char-043.gif" >misc/char-043</option>
+<option value="images/forums/avatar/misc/char-044.gif" >misc/char-044</option>
+<option value="images/forums/avatar/misc/char-045.gif" >misc/char-045</option>
+<option value="images/forums/avatar/misc/char-046.gif" >misc/char-046</option>
+<option value="images/forums/avatar/misc/char-047.gif" >misc/char-047</option>
+<option value="images/forums/avatar/misc/char-048.gif" >misc/char-048</option>
+<option value="images/forums/avatar/misc/char-049.gif" >misc/char-049</option>
+<option value="images/forums/avatar/misc/char-050.gif" >misc/char-050</option>
+<option value="images/forums/avatar/misc/char-051.gif" >misc/char-051</option>
+<option value="images/forums/avatar/misc/char-052.gif" >misc/char-052</option>
+<option value="images/forums/avatar/misc/char-053.gif" >misc/char-053</option>
+<option value="images/forums/avatar/misc/char-054.gif" >misc/char-054</option>
+<option value="images/forums/avatar/misc/char-055.gif" >misc/char-055</option>
+<option value="images/forums/avatar/misc/char-056.gif" >misc/char-056</option>
+<option value="images/forums/avatar/misc/char-057.gif" >misc/char-057</option>
+<option value="images/forums/avatar/misc/char-058.gif" >misc/char-058</option>
+<option value="images/forums/avatar/misc/char-100.gif" >misc/char-100</option>
+<option value="images/forums/avatar/misc/char-101.gif" >misc/char-101</option>
+<option value="images/forums/avatar/misc/char-102.gif" >misc/char-102</option>
+<option value="images/forums/avatar/misc/char-103.gif" >misc/char-103</option>
+<option value="images/forums/avatar/misc/char-104.gif" >misc/char-104</option>
+<option value="images/forums/avatar/misc/char-105.gif" >misc/char-105</option>
+<option value="images/forums/avatar/misc/char-106.gif" >misc/char-106</option>
+<option value="images/forums/avatar/misc/char-107.gif" >misc/char-107</option>
+<option value="images/forums/avatar/misc/char-108.gif" >misc/char-108</option>
+<option value="images/forums/avatar/misc/char-109.gif" >misc/char-109</option>
+<option value="images/forums/avatar/misc/char-110.gif" >misc/char-110</option>
+<option value="images/forums/avatar/misc/char-111.gif" >misc/char-111</option>
+<option value="images/forums/avatar/misc/char-112.gif" >misc/char-112</option>
+<option value="images/forums/avatar/misc/char-113.gif" >misc/char-113</option>
+<option value="images/forums/avatar/misc/char-114.gif" >misc/char-114</option>
+<option value="images/forums/avatar/misc/char-115.gif" >misc/char-115</option>
+<option value="images/forums/avatar/misc/char-116.gif" >misc/char-116</option>
+<option value="images/forums/avatar/misc/char-117.gif" >misc/char-117</option>
+<option value="images/forums/avatar/misc/char-118.gif" >misc/char-118</option>
+<option value="images/forums/avatar/misc/char-119.gif" >misc/char-119</option>
+<option value="images/forums/avatar/misc/char-120.gif" >misc/char-120</option>
+<option value="images/forums/avatar/misc/char-122.gif" >misc/char-122</option>
+<option value="images/forums/avatar/misc/char-123.gif" >misc/char-123</option>
+<option value="images/forums/avatar/misc/char-124.gif" >misc/char-124</option>
+<option value="images/forums/avatar/misc/char-125.gif" >misc/char-125</option>
+<option value="images/forums/avatar/misc/char-126.gif" >misc/char-126</option>
+<option value="images/forums/avatar/misc/char-129.gif" >misc/char-129</option>
+<option value="images/forums/avatar/misc/char-130.gif" >misc/char-130</option>
+<option value="images/forums/avatar/misc/char-131.gif" >misc/char-131</option>
+<option value="images/forums/avatar/misc/char-134.gif" >misc/char-134</option>
+<option value="images/forums/avatar/misc/char-135.gif" >misc/char-135</option>
+<option value="images/forums/avatar/misc/char-136.gif" >misc/char-136</option>
+<option value="images/forums/avatar/misc/char-137.gif" >misc/char-137</option>
+<option value="images/forums/avatar/misc/char-138.gif" >misc/char-138</option>
+<option value="images/forums/avatar/misc/char-139.gif" >misc/char-139</option>
+<option value="images/forums/avatar/misc/char-140.gif" >misc/char-140</option>
+<option value="images/forums/avatar/misc/char-141.gif" >misc/char-141</option>
+<option value="images/forums/avatar/misc/char-142.gif" >misc/char-142</option>
+<option value="images/forums/avatar/misc/char-143.gif" >misc/char-143</option>
+<option value="images/forums/avatar/misc/char-144.gif" >misc/char-144</option>
+<option value="images/forums/avatar/misc/char-145.gif" >misc/char-145</option>
+<option value="images/forums/avatar/misc/char-146.gif" >misc/char-146</option>
+<option value="images/forums/avatar/misc/char-147.gif" >misc/char-147</option>
+<option value="images/forums/avatar/misc/char-148.gif" >misc/char-148</option>
+<option value="images/forums/avatar/misc/char-149.gif" >misc/char-149</option>
+<option value="images/forums/avatar/misc/char-150.gif" >misc/char-150</option>
+<option value="images/forums/avatar/misc/char-151.gif" >misc/char-151</option>
+<option value="images/forums/avatar/misc/char-152.gif" >misc/char-152</option>
+<option value="images/forums/avatar/misc/char-153.gif" >misc/char-153</option>
+<option value="images/forums/avatar/misc/char-154.gif" >misc/char-154</option>
+<option value="images/forums/avatar/misc/char-155.gif" >misc/char-155</option>
+<option value="images/forums/avatar/misc/char-156.gif" >misc/char-156</option>
+<option value="images/forums/avatar/misc/char-157.gif" >misc/char-157</option>
+<option value="images/forums/avatar/misc/char-158.gif" >misc/char-158</option>
+<option value="images/forums/avatar/misc/char-159.gif" >misc/char-159</option>
+<option value="images/forums/avatar/misc/char-160.gif" >misc/char-160</option>
+<option value="images/forums/avatar/misc/char-161.gif" >misc/char-161</option>
+<option value="images/forums/avatar/misc/char-162.gif" >misc/char-162</option>
+<option value="images/forums/avatar/misc/char-163.gif" >misc/char-163</option>
+<option value="images/forums/avatar/misc/char-164.gif" >misc/char-164</option>
+<option value="images/forums/avatar/misc/char-165.gif" >misc/char-165</option>
+<option value="images/forums/avatar/misc/char-166.gif" >misc/char-166</option>
+<option value="images/forums/avatar/misc/char-167.gif" >misc/char-167</option>
+<option value="images/forums/avatar/misc/char-168.gif" >misc/char-168</option>
+<option value="images/forums/avatar/misc/char-169.gif" >misc/char-169</option>
+<option value="images/forums/avatar/misc/char-170.gif" >misc/char-170</option>
+<option value="images/forums/avatar/misc/char-171.gif" >misc/char-171</option>
+<option value="images/forums/avatar/misc/char-172.gif" >misc/char-172</option>
+<option value="images/forums/avatar/misc/char-173.gif" >misc/char-173</option>
+<option value="images/forums/avatar/misc/char-174.gif" >misc/char-174</option>
+<option value="images/forums/avatar/misc/char-175.gif" >misc/char-175</option>
+<option value="images/forums/avatar/misc/char-176.gif" >misc/char-176</option>
+<option value="images/forums/avatar/misc/char-177.gif" >misc/char-177</option>
+<option value="images/forums/avatar/misc/char-178.gif" >misc/char-178</option>
+<option value="images/forums/avatar/misc/char-179.gif" >misc/char-179</option>
+<option value="images/forums/avatar/misc/char-180.gif" >misc/char-180</option>
+<option value="images/forums/avatar/misc/char-181.gif" >misc/char-181</option>
+<option value="images/forums/avatar/misc/char-182.gif" >misc/char-182</option>
+<option value="images/forums/avatar/misc/char-183.gif" >misc/char-183</option>
+<option value="images/forums/avatar/misc/char-184.gif" >misc/char-184</option>
+<option value="images/forums/avatar/misc/char-185.gif" >misc/char-185</option>
+<option value="images/forums/avatar/misc/char-186.gif" >misc/char-186</option>
+<option value="images/forums/avatar/misc/char-187.gif" >misc/char-187</option>
+<option value="images/forums/avatar/misc/char-188.gif" >misc/char-188</option>
+<option value="images/forums/avatar/misc/char-189.gif" >misc/char-189</option>
+<option value="images/forums/avatar/misc/char-190.gif" >misc/char-190</option>
+<option value="images/forums/avatar/misc/char-191.gif" >misc/char-191</option>
+<option value="images/forums/avatar/misc/char-192.gif" >misc/char-192</option>
+<option value="images/forums/avatar/misc/char-193.gif" >misc/char-193</option>
+<option value="images/forums/avatar/misc/char-194.gif" >misc/char-194</option>
+<option value="images/forums/avatar/misc/char-195.gif" >misc/char-195</option>
+<option value="images/forums/avatar/misc/char-256.gif" >misc/char-256</option>
+<option value="images/forums/avatar/misc/char-257.gif" >misc/char-257</option>
+<option value="images/forums/avatar/misc/char-258.gif" >misc/char-258</option>
+<option value="images/forums/avatar/misc/char-259.gif" >misc/char-259</option>
+<option value="images/forums/avatar/misc/char-260.gif" >misc/char-260</option>
+<option value="images/forums/avatar/misc/char-261.gif" >misc/char-261</option>
+<option value="images/forums/avatar/misc/char-262.gif" >misc/char-262</option>
+<option value="images/forums/avatar/misc/char-263.gif" >misc/char-263</option>
+<option value="images/forums/avatar/misc/char-264.gif" >misc/char-264</option>
+<option value="images/forums/avatar/misc/char-265.gif" >misc/char-265</option>
+<option value="images/forums/avatar/misc/char-266.gif" >misc/char-266</option>
+<option value="images/forums/avatar/misc/char-267.gif" >misc/char-267</option>
+<option value="images/forums/avatar/misc/char-268.gif" >misc/char-268</option>
+<option value="images/forums/avatar/misc/char-275.gif" >misc/char-275</option>
+<option value="images/forums/avatar/misc/char-346.gif" >misc/char-346</option>
+<option value="images/forums/avatar/misc/char-347.gif" >misc/char-347</option>
+<option value="images/forums/avatar/misc/char-353.gif" >misc/char-353</option>
+<option value="images/forums/avatar/misc/char-354.gif" >misc/char-354</option>
+<option value="images/forums/avatar/misc/char-355.gif" >misc/char-355</option>
+<option value="images/forums/avatar/misc/char-362.gif" >misc/char-362</option>
+<option value="images/forums/avatar/misc/char-363.gif" >misc/char-363</option>
+<option value="images/forums/avatar/misc/char-364.gif" >misc/char-364</option>
+<option value="images/forums/avatar/misc/char-365.gif" >misc/char-365</option>
+<option value="images/forums/avatar/mononoke/char-198.gif" >mononoke/char-198</option>
+<option value="images/forums/avatar/mononoke/char-201.gif" >mononoke/char-201</option>
+<option value="images/forums/avatar/mononoke/char-204.gif" >mononoke/char-204</option>
+<option value="images/forums/avatar/mononoke/char-205.gif" >mononoke/char-205</option>
+<option value="images/forums/avatar/mononoke/char-209.gif" >mononoke/char-209</option>
+<option value="images/forums/avatar/mononoke/char-211.gif" >mononoke/char-211</option>
+<option value="images/forums/avatar/mononoke/char-213.gif" >mononoke/char-213</option>
+<option value="images/forums/avatar/mononoke/char-215.gif" >mononoke/char-215</option>
+<option value="images/forums/avatar/ohmygoddess/char-356.gif" >ohmygoddess/char-356</option>
+<option value="images/forums/avatar/ohmygoddess/char-357.gif" >ohmygoddess/char-357</option>
+<option value="images/forums/avatar/ohmygoddess/char-358.gif" >ohmygoddess/char-358</option>
+<option value="images/forums/avatar/ohmygoddess/char-359.gif" >ohmygoddess/char-359</option>
+<option value="images/forums/avatar/ohmygoddess/char-360.gif" >ohmygoddess/char-360</option>
+<option value="images/forums/avatar/ohmygoddess/char-361.gif" >ohmygoddess/char-361</option>
+<option value="images/forums/avatar/pokemon/char-121.gif" >pokemon/char-121</option>
+<option value="images/forums/avatar/pokemon/char-366.gif" >pokemon/char-366</option>
+<option value="images/forums/avatar/pokemon/char-367.gif" >pokemon/char-367</option>
+<option value="images/forums/avatar/pokemon/char-368.gif" >pokemon/char-368</option>
+<option value="images/forums/avatar/pokemon/char-369.gif" >pokemon/char-369</option>
+<option value="images/forums/avatar/pokemon/char-370.gif" >pokemon/char-370</option>
+<option value="images/forums/avatar/pokemon/char-371.gif" >pokemon/char-371</option>
+<option value="images/forums/avatar/pokemon/char-372.gif" >pokemon/char-372</option>
+<option value="images/forums/avatar/pokemon/char-373.gif" >pokemon/char-373</option>
+<option value="images/forums/avatar/pokemon/char-374.gif" >pokemon/char-374</option>
+<option value="images/forums/avatar/pokemon/char-375.gif" >pokemon/char-375</option>
+<option value="images/forums/avatar/pokemon/char-376.gif" >pokemon/char-376</option>
+<option value="images/forums/avatar/pokemon/char-377.gif" >pokemon/char-377</option>
+<option value="images/forums/avatar/pokemon/char-378.gif" >pokemon/char-378</option>
+<option value="images/forums/avatar/pokemon/char-379.gif" >pokemon/char-379</option>
+<option value="images/forums/avatar/pokemon/char-380.gif" >pokemon/char-380</option>
+<option value="images/forums/avatar/pokemon/char-381.gif" >pokemon/char-381</option>
+<option value="images/forums/avatar/pokemon/char-382.gif" >pokemon/char-382</option>
+<option value="images/forums/avatar/pokemon/char-383.gif" >pokemon/char-383</option>
+<option value="images/forums/avatar/pokemon/char-384.gif" >pokemon/char-384</option>
+<option value="images/forums/avatar/pokemon/char-385.gif" >pokemon/char-385</option>
+<option value="images/forums/avatar/pokemon/char-386.gif" >pokemon/char-386</option>
+<option value="images/forums/avatar/pokemon/char-387.gif" >pokemon/char-387</option>
+<option value="images/forums/avatar/pokemon/char-388.gif" >pokemon/char-388</option>
+<option value="images/forums/avatar/pokemon/char-389.gif" >pokemon/char-389</option>
+<option value="images/forums/avatar/pokemon/char-390.gif" >pokemon/char-390</option>
+<option value="images/forums/avatar/pokemon/char-391.gif" >pokemon/char-391</option>
+<option value="images/forums/avatar/pokemon/char-392.gif" >pokemon/char-392</option>
+<option value="images/forums/avatar/pokemon/char-393.gif" >pokemon/char-393</option>
+<option value="images/forums/avatar/pokemon/char-394.gif" >pokemon/char-394</option>
+<option value="images/forums/avatar/pokemon/char-395.gif" >pokemon/char-395</option>
+<option value="images/forums/avatar/pokemon/char-396.gif" >pokemon/char-396</option>
+<option value="images/forums/avatar/pokemon/char-397.gif" >pokemon/char-397</option>
+<option value="images/forums/avatar/pokemon/char-398.gif" >pokemon/char-398</option>
+<option value="images/forums/avatar/pokemon/char-399.gif" >pokemon/char-399</option>
+<option value="images/forums/avatar/pokemon/char-400.gif" >pokemon/char-400</option>
+<option value="images/forums/avatar/pokemon/char-401.gif" >pokemon/char-401</option>
+<option value="images/forums/avatar/pokemon/char-402.gif" >pokemon/char-402</option>
+<option value="images/forums/avatar/pokemon/char-403.gif" >pokemon/char-403</option>
+<option value="images/forums/avatar/pokemon/char-404.gif" >pokemon/char-404</option>
+<option value="images/forums/avatar/pokemon/char-405.gif" >pokemon/char-405</option>
+<option value="images/forums/avatar/quake/char-406.gif" >quake/char-406</option>
+<option value="images/forums/avatar/quake/char-407.gif" >quake/char-407</option>
+<option value="images/forums/avatar/quake/char-408.gif" >quake/char-408</option>
+<option value="images/forums/avatar/quake/char-409.gif" >quake/char-409</option>
+<option value="images/forums/avatar/quake/char-410.gif" >quake/char-410</option>
+<option value="images/forums/avatar/quake/char-411.gif" >quake/char-411</option>
+<option value="images/forums/avatar/quake/char-412.gif" >quake/char-412</option>
+<option value="images/forums/avatar/quake/char-413.gif" >quake/char-413</option>
+<option value="images/forums/avatar/quake/char-414.gif" >quake/char-414</option>
+<option value="images/forums/avatar/quake/char-415.gif" >quake/char-415</option>
+<option value="images/forums/avatar/quake/char-416.gif" >quake/char-416</option>
+<option value="images/forums/avatar/quake/char-417.gif" >quake/char-417</option>
+<option value="images/forums/avatar/quake/char-418.gif" >quake/char-418</option>
+<option value="images/forums/avatar/quake/char-419.gif" >quake/char-419</option>
+<option value="images/forums/avatar/quake/char-420.gif" >quake/char-420</option>
+<option value="images/forums/avatar/quake/char-421.gif" >quake/char-421</option>
+<option value="images/forums/avatar/quake/char-422.gif" >quake/char-422</option>
+<option value="images/forums/avatar/quake/char-423.gif" >quake/char-423</option>
+<option value="images/forums/avatar/quake/char-424.gif" >quake/char-424</option>
+<option value="images/forums/avatar/quake/char-425.gif" >quake/char-425</option>
+<option value="images/forums/avatar/quake/char-426.gif" >quake/char-426</option>
+<option value="images/forums/avatar/quake/char-427.gif" >quake/char-427</option>
+<option value="images/forums/avatar/quake/char-428.gif" >quake/char-428</option>
+<option value="images/forums/avatar/quake/char-429.gif" >quake/char-429</option>
+<option value="images/forums/avatar/quake/char-430.gif" >quake/char-430</option>
+<option value="images/forums/avatar/quake/char-431.gif" >quake/char-431</option>
+<option value="images/forums/avatar/quake/char-432.gif" >quake/char-432</option>
+<option value="images/forums/avatar/quake/char-433.gif" >quake/char-433</option>
+<option value="images/forums/avatar/quake/char-434.gif" >quake/char-434</option>
+<option value="images/forums/avatar/quake/char-435.gif" >quake/char-435</option>
+<option value="images/forums/avatar/quake/char-436.gif" >quake/char-436</option>
+<option value="images/forums/avatar/quake/char-437.gif" >quake/char-437</option>
+<option value="images/forums/avatar/quake/char-438.gif" >quake/char-438</option>
+<option value="images/forums/avatar/quake/char-439.gif" >quake/char-439</option>
+<option value="images/forums/avatar/quake/char-440.gif" >quake/char-440</option>
+<option value="images/forums/avatar/quake/char-441.gif" >quake/char-441</option>
+<option value="images/forums/avatar/quake/char-442.gif" >quake/char-442</option>
+<option value="images/forums/avatar/quake/char-443.gif" >quake/char-443</option>
+<option value="images/forums/avatar/quake/char-444.gif" >quake/char-444</option>
+<option value="images/forums/avatar/quake/char-445.gif" >quake/char-445</option>
+<option value="images/forums/avatar/ruronikenshin/char-486.gif" >ruronikenshin/char-486</option>
+<option value="images/forums/avatar/ruronikenshin/char-487.gif" >ruronikenshin/char-487</option>
+<option value="images/forums/avatar/ruronikenshin/char-488.gif" >ruronikenshin/char-488</option>
+<option value="images/forums/avatar/ruronikenshin/char-489.gif" >ruronikenshin/char-489</option>
+<option value="images/forums/avatar/ruronikenshin/char-490.gif" >ruronikenshin/char-490</option>
+<option value="images/forums/avatar/ruronikenshin/char-491.gif" >ruronikenshin/char-491</option>
+<option value="images/forums/avatar/ruronikenshin/char-492.gif" >ruronikenshin/char-492</option>
+<option value="images/forums/avatar/ruronikenshin/char-493.gif" >ruronikenshin/char-493</option>
+<option value="images/forums/avatar/ruronikenshin/char-494.gif" >ruronikenshin/char-494</option>
+<option value="images/forums/avatar/ruronikenshin/char-495.gif" >ruronikenshin/char-495</option>
+<option value="images/forums/avatar/ruronikenshin/char-496.gif" >ruronikenshin/char-496</option>
+<option value="images/forums/avatar/ruronikenshin/char-497.gif" >ruronikenshin/char-497</option>
+<option value="images/forums/avatar/ruronikenshin/char-498.gif" >ruronikenshin/char-498</option>
+<option value="images/forums/avatar/ruronikenshin/char-499.gif" >ruronikenshin/char-499</option>
+<option value="images/forums/avatar/ruronikenshin/char-500.gif" >ruronikenshin/char-500</option>
+<option value="images/forums/avatar/ruronikenshin/char-501.gif" >ruronikenshin/char-501</option>
+<option value="images/forums/avatar/ruronikenshin/char-502.gif" >ruronikenshin/char-502</option>
+<option value="images/forums/avatar/ruronikenshin/char-503.gif" >ruronikenshin/char-503</option>
+<option value="images/forums/avatar/ruronikenshin/char-504.gif" >ruronikenshin/char-504</option>
+<option value="images/forums/avatar/ruronikenshin/char-505.gif" >ruronikenshin/char-505</option>
+<option value="images/forums/avatar/slayers/char-197.gif" >slayers/char-197</option>
+<option value="images/forums/avatar/slayers/char-199.gif" >slayers/char-199</option>
+<option value="images/forums/avatar/southpark/char-546.gif" >southpark/char-546</option>
+<option value="images/forums/avatar/southpark/char-547.gif" >southpark/char-547</option>
+<option value="images/forums/avatar/southpark/char-548.gif" >southpark/char-548</option>
+<option value="images/forums/avatar/southpark/char-549.gif" >southpark/char-549</option>
+<option value="images/forums/avatar/southpark/char-550.gif" >southpark/char-550</option>
+<option value="images/forums/avatar/southpark/char-551.gif" >southpark/char-551</option>
+<option value="images/forums/avatar/southpark/char-552.gif" >southpark/char-552</option>
+<option value="images/forums/avatar/southpark/char-553.gif" >southpark/char-553</option>
+<option value="images/forums/avatar/southpark/char-554.gif" >southpark/char-554</option>
+<option value="images/forums/avatar/southpark/char-555.gif" >southpark/char-555</option>
+<option value="images/forums/avatar/southpark/char-556.gif" >southpark/char-556</option>
+<option value="images/forums/avatar/southpark/char-557.gif" >southpark/char-557</option>
+<option value="images/forums/avatar/southpark/char-558.gif" >southpark/char-558</option>
+<option value="images/forums/avatar/southpark/char-559.gif" >southpark/char-559</option>
+<option value="images/forums/avatar/streetfighter/char-216.gif" >streetfighter/char-216</option>
+<option value="images/forums/avatar/streetfighter/char-217.gif" >streetfighter/char-217</option>
+<option value="images/forums/avatar/streetfighter/char-218.gif" >streetfighter/char-218</option>
+<option value="images/forums/avatar/streetfighter/char-219.gif" >streetfighter/char-219</option>
+<option value="images/forums/avatar/streetfighter/char-220.gif" >streetfighter/char-220</option>
+<option value="images/forums/avatar/streetfighter/char-221.gif" >streetfighter/char-221</option>
+<option value="images/forums/avatar/streetfighter/char-222.gif" >streetfighter/char-222</option>
+<option value="images/forums/avatar/streetfighter/char-223.gif" >streetfighter/char-223</option>
+<option value="images/forums/avatar/streetfighter/char-224.gif" >streetfighter/char-224</option>
+<option value="images/forums/avatar/streetfighter/char-225.gif" >streetfighter/char-225</option>
+<option value="images/forums/avatar/streetfighter/char-226.gif" >streetfighter/char-226</option>
+<option value="images/forums/avatar/streetfighter/char-227.gif" >streetfighter/char-227</option>
+<option value="images/forums/avatar/streetfighter/char-228.gif" >streetfighter/char-228</option>
+<option value="images/forums/avatar/streetfighter/char-229.gif" >streetfighter/char-229</option>
+<option value="images/forums/avatar/streetfighter/char-230.gif" >streetfighter/char-230</option>
+<option value="images/forums/avatar/streetfighter/char-231.gif" >streetfighter/char-231</option>
+<option value="images/forums/avatar/streetfighter/char-232.gif" >streetfighter/char-232</option>
+<option value="images/forums/avatar/streetfighter/char-233.gif" >streetfighter/char-233</option>
+<option value="images/forums/avatar/streetfighter/char-234.gif" >streetfighter/char-234</option>
+<option value="images/forums/avatar/streetfighter/char-235.gif" >streetfighter/char-235</option>
+<option value="images/forums/avatar/streetfighter/char-236.gif" >streetfighter/char-236</option>
+<option value="images/forums/avatar/streetfighter/char-237.gif" >streetfighter/char-237</option>
+<option value="images/forums/avatar/streetfighter/char-238.gif" >streetfighter/char-238</option>
+<option value="images/forums/avatar/streetfighter/char-239.gif" >streetfighter/char-239</option>
+<option value="images/forums/avatar/streetfighter/char-240.gif" >streetfighter/char-240</option>
+<option value="images/forums/avatar/streetfighter/char-241.gif" >streetfighter/char-241</option>
+<option value="images/forums/avatar/streetfighter/char-242.gif" >streetfighter/char-242</option>
+<option value="images/forums/avatar/streetfighter/char-243.gif" >streetfighter/char-243</option>
+<option value="images/forums/avatar/streetfighter/char-244.gif" >streetfighter/char-244</option>
+<option value="images/forums/avatar/streetfighter/char-245.gif" >streetfighter/char-245</option>
+<option value="images/forums/avatar/streetfighter/char-246.gif" >streetfighter/char-246</option>
+<option value="images/forums/avatar/streetfighter/char-247.gif" >streetfighter/char-247</option>
+<option value="images/forums/avatar/streetfighter/char-248.gif" >streetfighter/char-248</option>
+<option value="images/forums/avatar/streetfighter/char-249.gif" >streetfighter/char-249</option>
+<option value="images/forums/avatar/streetfighter/char-250.gif" >streetfighter/char-250</option>
+<option value="images/forums/avatar/streetfighter/char-251.gif" >streetfighter/char-251</option>
+<option value="images/forums/avatar/streetfighter/char-252.gif" >streetfighter/char-252</option>
+<option value="images/forums/avatar/streetfighter/char-253.gif" >streetfighter/char-253</option>
+<option value="images/forums/avatar/streetfighter/char-254.gif" >streetfighter/char-254</option>
+<option value="images/forums/avatar/streetfighter/char-255.gif" >streetfighter/char-255</option>
+<option value="images/forums/avatar/yuyuhakusho/char-327.gif" >yuyuhakusho/char-327</option>
+<option value="images/forums/avatar/yuyuhakusho/char-328.gif" >yuyuhakusho/char-328</option>
+<option value="images/forums/avatar/yuyuhakusho/char-329.gif" >yuyuhakusho/char-329</option>
+<option value="images/forums/avatar/yuyuhakusho/char-330.gif" >yuyuhakusho/char-330</option>
+<option value="images/forums/avatar/yuyuhakusho/char-331.gif" >yuyuhakusho/char-331</option>
+<option value="images/forums/avatar/yuyuhakusho/char-332.gif" >yuyuhakusho/char-332</option>
+<option value="images/forums/avatar/yuyuhakusho/char-333.gif" >yuyuhakusho/char-333</option>
+<option value="images/forums/avatar/yuyuhakusho/char-334.gif" >yuyuhakusho/char-334</option>
+<option value="images/forums/avatar/yuyuhakusho/char-335.gif" >yuyuhakusho/char-335</option>
+<option value="images/forums/avatar/yuyuhakusho/char-336.gif" >yuyuhakusho/char-336</option>
+<option value="images/forums/avatar/yuyuhakusho/char-337.gif" >yuyuhakusho/char-337</option>
+<option value="images/forums/avatar/yuyuhakusho/char-338.gif" >yuyuhakusho/char-338</option>
+<option value="images/forums/avatar/yuyuhakusho/char-339.gif" >yuyuhakusho/char-339</option>
+<option value="images/forums/avatar/yuyuhakusho/char-340.gif" >yuyuhakusho/char-340</option>
+<option value="images/forums/avatar/yuyuhakusho/char-341.gif" >yuyuhakusho/char-341</option>
+<option value="images/forums/avatar/yuyuhakusho/char-342.gif" >yuyuhakusho/char-342</option>
+<option value="images/forums/avatar/yuyuhakusho/char-343.gif" >yuyuhakusho/char-343</option>
+<option value="images/forums/avatar/yuyuhakusho/char-344.gif" >yuyuhakusho/char-344</option>
+<option value="images/forums/avatar/yuyuhakusho/char-345.gif" >yuyuhakusho/char-345</option>
+</select>
+<td width=10> <td width=65><a href="index.php?name=users&logop=avlist">List</a>
+<td><img src="images/forums/avatar\blank.gif" name="listavatar" height=30 width=30>
+</table></table></table>
+<tr><td valign=top>Signature: <td><textarea name=info rows=4 cols=60></textarea><br>
+<tr><td valign=top>Interests: <td><textarea name=interests rows=4 cols=60></textarea><br>
+</center>
+<tr><td colspan=2><input type=reset value="Reset"> 
+ <input type=submit value="Sign Up" class=button>
+<tr><td colspan=2><br><font class=note>**Note: Required fields are case sensitive.**<br>
+**Note: All information is accessable by users on this site except real email. Do not enter information you do not wish to share.**<br>
+**Note: Secure signup uses javascript to hide your password.**</font></table></form>
+</table></table>
+
+</table><tr><td valign=top>
+<br><br>
+<table cellpadding=0 cellspacing=0 valign=top  border=0><tr><td width=100%><td nowrap valign=top><font class=copyright>
+Copyright &copy 2004 <a href=http://rolepost.com>RolePost.com</a><br>All logos and trademarks in this site are property of their respective owners.<br>
+The comments and posts are property of their posters.<br>
+Web site's engine is Copyright &copy; 2003-2004 <a href=http://arzynik.com>Arzynik</a>
+
+    </table></table><td width=15><img src=images/pixel.gif width=15><td valign=top align=right>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7289853541435839";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_color_border = "333333";
+google_color_bg = "000000";
+google_color_link = "FFFFFF";
+google_color_url = "999999";
+google_color_text = "CCCCCC";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br><br><table width=100%><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="paypal@arzynik.com">
+<input type="hidden" name="item_name" value="RolePost.com Donation">
+<input type="hidden" name="item_number" value="1">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="return" value="http://rolepost.com/index.php?name=donate&op=thank">
+<input type="hidden" name="cancel_return" value="http://rolepost.com/index.php?name=donate&op=cancel">
+<input type="hidden" name="cn" value="Your contributions are greatly appreciated.">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax" value="0">
+<input type="hidden" name="lc" value="US">
+<input type="image" src="images/x-click-butcc-donate.gif" border="0" name="submit" alt="PayPal Donation">
+</form></table>
+</table></body>
+</html>

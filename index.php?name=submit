@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>Role Post :: Submit</title>
+<link rel="stylesheet" href="themes/rolepost/style.css" type="text/css">
+<link rel="shortcut icon" href="themes/rolepost/favicon.ico">
+<meta name="description" content="A free role playing forum and community.">
+<meta name="author" content="Kelsey Smith">
+<meta name="keywords" content="arzynik, gemini, the gemini portal, devin smith, php, free, opensource, website, my, gallery, forums, forum, comments, author, comment, post, thread, section, category, article, articles, download, downloads, link, links, weblink, weblinks, search, query, account, ArzFS, arzfs, database, mysql, poll, polls, user, users, about">
+<meta name="robots" content="index,follow">
+<script language="JavaScript" type="text/javascript" src="include/fscript.js"></script>
+
+</head>
+
+<body><table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" valign="top">
+<tr><td width=135><td valign=top align=center>
+<table border="0" cellpadding="0" cellspacing="0" width="770" align="center" valign="top"><tr><td valign=top>
+<tr height=182><td background="themes/rolepost/images/rp.jpg" valign=top height=182 bgcolor=#ffffff>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="770" HEIGHT="182" id="menu" ALIGN="">
+<PARAM NAME=movie VALUE="themes/rolepost/rolepost.swf?user=Anonymous&sitename=Role Post&thisurl=/index.php?name=submit">
+<PARAM NAME=quality VALUE=high>
+<param name="wmode" value="transparent">
+<EMBED src="themes/rolepost/rolepost.swf?user=Anonymous&sitename=Role Post&thisurl=/index.php?name=submit" quality=high bgcolor=#FFFFFF  WIDTH="770" HEIGHT="182" NAME="bytesfullv2" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+</OBJECT>
+<tr><td width=100% valign=top>
+
+
+<table border="0" bgcolor=#ffffff cellpadding="3" cellspacing="3" width="100%" align="center" valign="top"><tr><td valign=top>
+<table class=menu1 width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td>
+<table class=menu1 border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/pixel.gif" height="10" width="10">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=news" class="menu1">News</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1current"><a href="http://rolepost.com/index.php?name=forums" class="menu1">Forums</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=userinfo" class="menu1">Users</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=categories" class="menu1">Archive</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=links" class="menu1">Links</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=faq" class="menu1">FAQ</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=search" class="menu1">Search</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=submit" class="menu1current">Submit</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=users" class="menu1">My Account</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=rss" class="menu1current"><img src=images/xml.gif border=0></a>
+<td><img src="images/pixel.gif" height="10" width="20">
+</table>
+</table>
+
+<tr><td valign=top height=100%>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+<tr class="menu2title"><td class="menu2title" width="100%" style="text-align: left;"><img src="images/pixel.gif" width=10 height=1><font class="columnwhitetitle">Submit</font><br>
+</table>
+<table border="0" cellpadding="1" cellspacing="0" width="100%" align="center" bgcolor="#999999" ><tr><td><table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" bgcolor="#E3EBFF" >
+<tr><td>
+<font class=subtitle>Submit new article</font>
+<form name=post action="index.php?name=submit&op=newa" method=post><table><tr><td colspan=2>
+<tr><td valign=top>Title: <td><input type=text name=dtitle size=50 value="">
+<tr><td valign=top>FScript:<br>
+(<a href="javascript:fscriptstyle(-1)" class="genmed" onMouseOver="helpline('a')">Close All Tags</a>)
+<td><input type="button" class="button" accesskey="b" name="addFScript0" value=" B " style="font-weight:bold; width: 30px" onClick="fscriptstyle(0)" onMouseOver="helpline('b')">
+<input type="button" class="button" accesskey="i" name="addFScript2" value=" i " style="font-style:italic; width: 30px" onClick="fscriptstyle(2)" onMouseOver="helpline('i')">
+<input type="button" class="button" accesskey="u" name="addFScript4" value=" u " style="text-decoration: underline; width: 30px" onClick="fscriptstyle(4)" onMouseOver="helpline('u')">
+<input type="button" class="button" accesskey="q" name="addFScript6" value="Quote" style="width: 50px" onClick="fscriptstyle(6)" onMouseOver="helpline('q')">
+<input type="button" class="button" accesskey="c" name="addFScript8" value="Code" style="width: 40px" onClick="fscriptstyle(8)" onMouseOver="helpline('c')">
+<input type="button" class="button" accesskey="p" name="addFScript10" value="Img" style="width: 40px"onClick="fscriptstyle(10)" onMouseOver="helpline('p')">
+<input type="button" class="button" accesskey="w" name="addFScript12" value="URL" style="text-decoration: underline; width: 40px" onClick="fscriptstyle(12)" onMouseOver="helpline('w')">
+<br><select name="addFScript18" onChange="fscriptfontstyle('[color=' + this.form.addFScript18.options[this.form.addFScript18.selectedIndex].value + ']', '[/color]')" onMouseOver="helpline('s')">
+<option style="color:black; background-color: #FFFFFF " value="#444444" class="genmed">Default</option>
+<option style="color:darkred; background-color: #DEE3E7" value="darkred" class="genmed">Dark Red</option>
+<option style="color:red; background-color: #DEE3E7" value="red" class="genmed">Red</option>
+<option style="color:orange; background-color: #DEE3E7" value="orange" class="genmed">Orange</option>
+<option style="color:brown; background-color: #DEE3E7" value="brown" class="genmed">Brown</option>
+<option style="color:yellow; background-color: #DEE3E7" value="yellow" class="genmed">Yellow</option>
+<option style="color:green; background-color: #DEE3E7" value="green" class="genmed">Green</option>
+<option style="color:olive; background-color: #DEE3E7" value="olive" class="genmed">Olive</option>
+<option style="color:cyan; background-color: #DEE3E7" value="cyan" class="genmed">Cyan</option>
+<option style="color:blue; background-color: #DEE3E7" value="blue" class="genmed">Blue</option>
+<option style="color:darkblue; background-color: #DEE3E7" value="darkblue" class="genmed">Dark Blue</option>
+<option style="color:indigo; background-color: #DEE3E7" value="indigo" class="genmed">Indigo</option>
+<option style="color:violet; background-color: #DEE3E7" value="violet" class="genmed">Violet</option>
+<option style="color:white; background-color: #DEE3E7" value="white" class="genmed">White</option>
+<option style="color:black; background-color: #DEE3E7" value="black" class="genmed">Black</option>
+</select>
+<select name="addFScript20" onChange="fscriptfontstyle('[size=' + this.form.addFScript20.options[this.form.addFScript20.selectedIndex].value + ']', '[/size]')" onMouseOver="helpline('f')">
+<option value="7" class="genmed">Tiny</option>
+<option value="9" class="genmed">Small</option>
+<option value="12" selected class="genmed">Normal</option>
+<option value="18" class="genmed">Large</option>
+<optionvalue="24" class="genmed">Huge</option>
+</select>
+<br><input type="text" name="helpbox" size="50" maxlength="100">
+<tr><td valign=top>Content: <td><textarea name=ppcontent rows=12 cols=50 wrap=off></textarea>
+<tr><td valign=top>Folder: <td><select name=dfolder>
+<option value=0>/</option>
+<option value=1> / News</option>
+<option value=2> / Junk</option>
+<option value=3> / Role Play</option>
+</select>
+<tr><td valign=top>Category: <td><select name=category>
+<option value=2>Junk</option>
+<option value=1>News</option>
+<option value=3>Role Play</option>
+</select>
+<tr><td valign=top>Author: <td><input type=text name=author size=50 value=Anonymous>
+<tr><td valign=top>Related Link: <td><input type=text name=dlink size=50 value=http://>
+<tr><td valign=top>Use FScript: <td><input type=checkbox name=usefscript checked>
+<tr><td valign=top>Show in News: <td><input type=checkbox name=inews checked>
+<input type=hidden name=aid value="">
+<tr><td> <td align=right><input type=submit value="Submit Article"> <input type=reset value="Clear">
+</table></form></table></table>
+
+<br>
+<table border="0" cellpadding="1" cellspacing="0" width="100%" align="center" bgcolor="#999999" ><tr><td><table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" bgcolor="#E3EBFF" >
+<tr><td>
+<font class=subtitle>Submit new download</font>
+<form name=newnews action="index.php?name=submit&op=newd" method=post><table><tr><td colspan=2>
+<tr><td valign=top>Title: <td><input type=text name=dtitle size=50 value="">
+<tr><td valign=top>Description: <td><textarea name=dcontent rows=8 cols=50 wrap=off></textarea>
+<tr><td valign=top>Folder: <td><select name=dfolder>
+<option value=0>/</option>
+</select>
+<tr><td valign=top>Author: <td><input type=text name=author size=50 value=Anonymous>
+<tr><td valign=top>Related Link: <td><input type=text name=dlink size=50 value=http://>
+<tr><td valign=top>URL: <td><input type=text name=downurl size=50 value=http://>
+<tr><td valign=top>Version: <td><input type=text name=version size=50 value=>
+<tr><td valign=top>Size: <td><input type=text name=size size=50 value=>
+<tr><td valign=top>Open Source: <td><input type=checkbox name=opensource>
+<tr><td valign=top>In Development: <td><input type=checkbox name=developing>
+<input type=hidden name=did value="">
+<tr><td> <td align=right><input type=submit value="Submit Download"> <input type=reset value="Clear">
+</table></form></table></table>
+
+<br>
+<table border="0" cellpadding="1" cellspacing="0" width="100%" align="center" bgcolor="#999999" ><tr><td><table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" bgcolor="#E3EBFF" >
+<tr><td>
+<font class=subtitle>Submit new link</font>
+<form name=newnews action="index.php?name=submit&op=newl" method=post><table><tr><td colspan=2>
+<tr><td valign=top>Title: <td><input type=text name=dtitle size=50 value="">
+<tr><td valign=top>Description: <td><textarea name=dcontent rows=8 cols=50 wrap=off></textarea>
+<tr><td valign=top>Folder: <td><select name=dfolder>
+<option value=0>/</option>
+</select>
+<tr><td valign=top>Author: <td><input type=text name=author size=50 value=Anonymous>
+<tr><td valign=top>URL: <td><input type=text name=downurl size=50 value=http://>
+<input type=hidden name=lid value="">
+<tr><td> <td align=right><input type=submit value="Submit Link"> <input type=reset value="Clear">
+</table></form></table></table>
+
+</table><tr><td valign=top>
+<br><br>
+<table cellpadding=0 cellspacing=0 valign=top  border=0><tr><td width=100%><td nowrap valign=top><font class=copyright>
+Copyright &copy 2004 <a href=http://rolepost.com>RolePost.com</a><br>All logos and trademarks in this site are property of their respective owners.<br>
+The comments and posts are property of their posters.<br>
+Web site's engine is Copyright &copy; 2003-2004 <a href=http://arzynik.com>Arzynik</a>
+
+    </table></table><td width=15><img src=images/pixel.gif width=15><td valign=top align=right>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7289853541435839";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_color_border = "333333";
+google_color_bg = "000000";
+google_color_link = "FFFFFF";
+google_color_url = "999999";
+google_color_text = "CCCCCC";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br><br><table width=100%><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="paypal@arzynik.com">
+<input type="hidden" name="item_name" value="RolePost.com Donation">
+<input type="hidden" name="item_number" value="1">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="return" value="http://rolepost.com/index.php?name=donate&op=thank">
+<input type="hidden" name="cancel_return" value="http://rolepost.com/index.php?name=donate&op=cancel">
+<input type="hidden" name="cn" value="Your contributions are greatly appreciated.">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax" value="0">
+<input type="hidden" name="lc" value="US">
+<input type="image" src="images/x-click-butcc-donate.gif" border="0" name="submit" alt="PayPal Donation">
+</form></table>
+</table></body>
+</html>

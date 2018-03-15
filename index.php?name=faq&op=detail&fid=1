@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Role Post :: Frequently Asked Questions : General</title>
+<link rel="stylesheet" href="themes/rolepost/style.css" type="text/css">
+<link rel="shortcut icon" href="themes/rolepost/favicon.ico">
+<meta name="description" content="A free role playing forum and community.">
+<meta name="author" content="Kelsey Smith">
+<meta name="keywords" content="arzynik, gemini, the gemini portal, devin smith, php, free, opensource, website, my, gallery, forums, forum, comments, author, comment, post, thread, section, category, article, articles, download, downloads, link, links, weblink, weblinks, search, query, account, ArzFS, arzfs, database, mysql, poll, polls, user, users, about">
+<meta name="robots" content="index,follow">
+</head>
+
+<body><table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" valign="top">
+<tr><td width=135><td valign=top align=center>
+<table border="0" cellpadding="0" cellspacing="0" width="770" align="center" valign="top"><tr><td valign=top>
+<tr height=182><td background="themes/rolepost/images/rp.jpg" valign=top height=182 bgcolor=#ffffff>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="770" HEIGHT="182" id="menu" ALIGN="">
+<PARAM NAME=movie VALUE="themes/rolepost/rolepost.swf?user=Anonymous&sitename=Role Post&thisurl=/index.php?name=faq&op=detail&fid=1">
+<PARAM NAME=quality VALUE=high>
+<param name="wmode" value="transparent">
+<EMBED src="themes/rolepost/rolepost.swf?user=Anonymous&sitename=Role Post&thisurl=/index.php?name=faq&op=detail&fid=1" quality=high bgcolor=#FFFFFF  WIDTH="770" HEIGHT="182" NAME="bytesfullv2" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+</OBJECT>
+<tr><td width=100% valign=top>
+
+
+<table border="0" bgcolor=#ffffff cellpadding="3" cellspacing="3" width="100%" align="center" valign="top"><tr><td valign=top>
+<table class=menu1 width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td>
+<table class=menu1 border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="images/pixel.gif" height="10" width="10">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=news" class="menu1">News</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1current"><a href="http://rolepost.com/index.php?name=forums" class="menu1">Forums</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=userinfo" class="menu1">Users</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=categories" class="menu1">Archive</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=links" class="menu1">Links</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=faq" class="menu1current">FAQ</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=search" class="menu1">Search</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=submit" class="menu1">Submit</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=users" class="menu1">My Account</a>
+<td><img src="images/pixel.gif" height="10" width="20">
+<td class="menu1"><a href="http://rolepost.com/index.php?name=rss" class="menu1"><img src=images/xml.gif border=0></a>
+<td><img src="images/pixel.gif" height="10" width="20">
+</table>
+</table>
+
+<tr><td valign=top height=100%>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+<tr class="menu2title"><td class="menu2title" width="100%" style="text-align: left;"><img src="images/pixel.gif" width=10 height=1><font class="columnwhitetitle"><a href=index.php?name=faq>Frequently Asked Questions</a> : General</font><br>
+</table>
+<table border="0" cellpadding="1" cellspacing="0" width="100%" align="center" bgcolor="#999999" ><tr><td><table border="0" cellpadding="2" cellspacing="0" width="100%" align="center" bgcolor="#E3EBFF" >
+<tr><td>
+<b>General</b><br>
+General Site FAQ<br><br><ol>
+<li><a href=#6>Good job. I want to thank you. Where is your email?</a>
+<li><a href=#1>I forgot my password what do i do now?</a>
+<li><a href=#7>I like my old kind of forums like phpBB, Invision, and VBuliten but i dont knwo how to set them up. Can you help me?</a>
+<li><a href=#9>Rolepost.com Rules! I want a T-Shirt! Where do i get one?!</a>
+<li><a href=#3>This forum is cool! How do I get one?!</a>
+<li><a href=#4>This is just like all the other forums I have been on. Why did you rip them off?</a>
+<li><a href=#2>Whats a MySQL Error and whay am i getting it?</a>
+<li><a href=#8>Who is the boss?</a>
+<li><a href=#12>Why is my question not in the FAQ?</a>
+<li><a href=#5>You suck and i want to complain! Where is your email?!</a>
+</ol><br>
+<table cellpadding=2 cellspacing=2 width=100%>
+<a name=6></a><tr bgcolor=#ceddff><td><b>1. Good job. I want to thank you. Where is your email?</b><br>
+webmaster@rolepost.com<br><br>
+<a name=1></a><tr bgcolor=#e0e5ff><td><b>2. I forgot my password what do i do now?</b><br>
+You contact me at webmaster@rolepost.com because i havent yet added password reseting via secret question.<br><br>
+<a name=7></a><tr bgcolor=#ceddff><td><b>3. I like my old kind of forums like phpBB, Invision, and VBuliten but i dont knwo how to set them up. Can you help me?</b><br>
+20$ and I will set up anything you want on your server.<br><br>
+<a name=9></a><tr bgcolor=#e0e5ff><td><b>4. Rolepost.com Rules! I want a T-Shirt! Where do i get one?!</b><br>
+If you realy love it that much im sure i could find a way to make some shirts. Or pants. I like pants.<br><br>
+<a name=3></a><tr bgcolor=#ceddff><td><b>5. This forum is cool! How do I get one?!</b><br>
+Go to http://arzynik.com and hope that The Gemini Portal is in a good release state. Otherwise keep checking back until it is.<br><br>
+<a name=4></a><tr bgcolor=#e0e5ff><td><b>6. This is just like all the other forums I have been on. Why did you rip them off?</b><br>
+Not one line of code in all 55369 lines is stolen. Each and every character was hand keyed into notepad since june 3rd 2003.<br><br>
+<a name=2></a><tr bgcolor=#ceddff><td><b>7. Whats a MySQL Error and whay am i getting it?</b><br>
+MySQL errors are warning from the server saying that arzynik is a horrible coder. Please copy and paste the entire error messasge and he url that you are at and post it here:
+http://arzynik.com/index.php?name=forums&mini=&op=section&sid=13<br><br>
+<a name=8></a><tr bgcolor=#e0e5ff><td><b>8. Who is the boss?</b><br>
+Ashari is the boss. I am arzynik. The webmaster/coder/rolpost overlord. Anything not answerd in this FAQ ask her.<br><br>
+<a name=12></a><tr bgcolor=#ceddff><td><b>9. Why is my question not in the FAQ?</b><br>
+That is because FAQs are stupid.<br><br>
+<a name=5></a><tr bgcolor=#e0e5ff><td><b>10. You suck and i want to complain! Where is your email?!</b><br>
+stfu@rolepost.com<br><br>
+</table>
+</table></table>
+
+</table><tr><td valign=top>
+<br><br>
+<table cellpadding=0 cellspacing=0 valign=top  border=0><tr><td width=100%><td nowrap valign=top><font class=copyright>
+Copyright &copy 2004 <a href=http://rolepost.com>RolePost.com</a><br>All logos and trademarks in this site are property of their respective owners.<br>
+The comments and posts are property of their posters.<br>
+Web site's engine is Copyright &copy; 2003-2004 <a href=http://arzynik.com>Arzynik</a>
+
+    </table></table><td width=15><img src=images/pixel.gif width=15><td valign=top align=right>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7289853541435839";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_color_border = "333333";
+google_color_bg = "000000";
+google_color_link = "FFFFFF";
+google_color_url = "999999";
+google_color_text = "CCCCCC";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br><br><table width=100%><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="paypal@arzynik.com">
+<input type="hidden" name="item_name" value="RolePost.com Donation">
+<input type="hidden" name="item_number" value="1">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="return" value="http://rolepost.com/index.php?name=donate&op=thank">
+<input type="hidden" name="cancel_return" value="http://rolepost.com/index.php?name=donate&op=cancel">
+<input type="hidden" name="cn" value="Your contributions are greatly appreciated.">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax" value="0">
+<input type="hidden" name="lc" value="US">
+<input type="image" src="images/x-click-butcc-donate.gif" border="0" name="submit" alt="PayPal Donation">
+</form></table>
+</table></body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Role Post :: New Hosting</title>
+<link rel="shortcut icon" href="themes/rolepost/favicon.ico">
+
+<style type="text/css">
+td { font-size : 80%;font-family : tahoma;color: #000000;font-weight: 700;}
+A:visited {color: #003399;font-weight: bold;text-decoration: underline;}
+A:hover {color: #000000;font-weight: bold;text-decoration: underline;}
+A:link {color: #003399;font-weight: bold;text-decoration: underline;}
+A:active {color: #a6a6a6;font-weight: bold;text-decoration: underline;}
+textarea {border: 1px solid #003399 ;color: black;background-color: white;}
+input.button{border: 1px solid #003399;color: black;background-color: white;}
+input.text{border: 1px solid #003399;color: black;background-color: white;}
+BODY {color: #000000; FONT-SIZE: 10pt; FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; scrollbar-base-color: #a6a6a6; MARGIN: 0px 0px 10px; BACKGROUND-COLOR: #ffffff}
+.title {COLOR: #000000; font: 13.5pt arial; FONT-WEIGHT: bold;}
+.copyright {FONT-SIZE: 8pt; COLOR: #000000; TEXT-ALIGN: left}
+.content {text-decoration: none; color: black; font: 10pt arial;}
+.links {text-decoration: none; color: #0066cc; font: 10pt arial;}
+</style>
+</head><body>
+
+<table cellpadding=10 cellspacing=10 bgcolor=#ffffff><tr><td>
+<table cellpadding=1 cellspacing=1 bgcolor=#a6a6a6><tr><td>
+<table cellpadding=5 cellspacing=5 bgcolor=#ffffff><tr><td>
+<table width=100% border=0 cellpadding=2 cellspacing=0>
+<tr><td align=left><font class=title>News : New Hosting</font>
+<tr heigth=2 bgcolor=black><td heigth=2 width=650><tr><td>
+<table cellpadding=0 cellspacing=0 width=100%><tr><td width=100%>
+<table width=100%>
+
+Posted by arzynik on Thursday, March 18th 2004<br><br>
+Rolepost.com will be rolocated soon.<br>The current host has expired and it will be relocated to a faster more reliable host.<br>Expect some downtime to accomadate a more relable system.<br>Sorry for the inconvience.<br><br>-Devin <br><br>
+
+</table></table></table></table></table>
+<table width=100%><tr><td align=right>
+<font class=copyright>
+Copyright &copy 2004 <a href=http://rolepost.com>RolePost.com</a><br>All logos and trademarks in this site are property of their respective owners.<br>
+The comments and posts are property of their posters.<br>
+Web site's engine is Copyright &copy; 2003-2004 <a href=http://arzynik.com>Arzynik</a>
+
+    </table>
